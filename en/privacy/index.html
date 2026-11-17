@@ -18,98 +18,36 @@
 <main class="sheet">
 <p class="draft">Draft. A lawyer is reviewing this text (question 19); it is not final until then.</p>
 <h1>Privacy Policy</h1>
-<p class="updated">Updated: TODO publication date</p>
-<p>Tarocchi is a tarot deck on your phone. The questions you ask the deck are personal, so this page says plainly what the app knows, where it lives and who can see it.</p>
+<p class="updated">Updated: 2026-11-17</p>
+<p>Tarocchi is a tarot deck on your phone. The app and this site are run by Ilya Manenkov, an independent developer, who is responsible for the data. Your diary lives on the phone, and a copy is kept on our server at Railway in the EU (the Netherlands), so the diary is not lost and can move to a new phone.</p>
 
-<h2><span class="n">I</span>In short</h2>
-<ul>
-<li>The text of your question goes to Anthropic’s Claude model only to check the question and write the reading — without your name and without your past spreads.</li>
-<li>Analytics are our own: only the app’s owner sees the events. There are no third-party analytics or ads, and no data is sold.</li>
-<li>Your IP address is not stored for analytics — only the country is taken from it. At sign-in the address is kept for up to an hour to prevent abuse.</li>
-<li>Deleting your account wipes everything: the data on the server and the diary on the phone.</li>
-</ul>
-
-<h2><span class="n">II</span>Who is responsible for the data</h2>
-<p>The Tarocchi app and this site are run by Ilya Manenkov, an independent developer. Contact: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
-
-<h2><span class="n">III</span>What is collected and where it lives</h2>
+<h2><span class="n">I</span>What data and why</h2>
 <table class="data">
-<thead><tr><th>Data</th><th>Where it lives</th><th>Who receives it</th></tr></thead>
+<thead><tr><th>Data</th><th>Why</th><th>Who receives it</th><th>How long it is kept</th></tr></thead>
 <tbody>
-<tr><td>Questions to the deck — text</td><td data-h="Where">Phone and our server</td><td data-h="Who">Anthropic — when the question is checked and the reading is written</td></tr>
-<tr><td>Handwriting of the question</td><td data-h="Where">Phone and our server</td><td data-h="Who">Anthropic — an image of the strokes, to read the question; the server does not keep it</td></tr>
-<tr><td>Readings</td><td data-h="Where">Phone and our server</td><td data-h="Who">No one</td></tr>
-<tr><td>Drawn cards and dates</td><td data-h="Where">Phone and our server</td><td data-h="Who">No one</td></tr>
-<tr><td>Language, time zone, card-of-the-day time</td><td data-h="Where">Our server</td><td data-h="Who">No one</td></tr>
-<tr><td>Device token for notifications</td><td data-h="Where">Our server</td><td data-h="Who">Apple (APNs notification service)</td></tr>
-<tr><td>Apple identifier — if you sign in with Apple</td><td data-h="Where">Our server</td><td data-h="Who">No one</td></tr>
-<tr><td>Subscription status</td><td data-h="Where">Our server</td><td data-h="Who">RevenueCat and Apple</td></tr>
-<tr><td>Approximate location — only if weather outside the window is on</td><td data-h="Where">Not stored</td><td data-h="Who">Apple (WeatherKit) — at the moment of the weather request</td></tr>
-<tr><td>Analytics events: screens, actions, device, country</td><td data-h="Where">Our server</td><td data-h="Who">No one</td></tr>
-<tr><td>Crash reports — without the content of questions or readings</td><td data-h="Where">Our server</td><td data-h="Who">No one</td></tr>
-<tr><td>IP address</td><td data-h="Where">Not stored for analytics, only the country code is kept; at sign-in — up to an hour</td><td data-h="Who">No one</td></tr>
-<tr><td>Photo for the 79th card</td><td data-h="Where">Not stored: processed on the phone, only the finished two-colour print goes to the server</td><td data-h="Who">No one</td></tr>
-<tr><td>Motion sensor data</td><td data-h="Where">Not stored</td><td data-h="Who">No one</td></tr>
+<tr><td>Question text, spread, cards, language</td><td data-h="Why">To check the question and write the reading</td><td data-h="Who">Anthropic (the Claude model), without your name or past spreads</td><td data-h="Kept">On the server — until the question or the account is deleted. <span class="todo">TODO: retention at Anthropic under the API agreement.</span></td></tr>
+<tr><td>Image of a question written with your finger</td><td data-h="Why">To read the question</td><td data-h="Who">Anthropic</td><td data-h="Kept">Not kept by the server</td></tr>
+<tr><td>79th card: imprint, name, meaning</td><td data-h="Why">Your personal card in spreads</td><td data-h="Who">Anthropic — the name and meaning, for the reading; the imprint — no one</td><td data-h="Kept">Until the card or the account is deleted; the photo never leaves the phone</td></tr>
+<tr><td>Diary: readings, cards, dates</td><td data-h="Why">The diary</td><td data-h="Who">No one</td><td data-h="Kept">Until deleted</td></tr>
+<tr><td>Account: identifier, Apple ID if you sign in with Apple, language, time zone</td><td data-h="Why">To find your diary on a new phone, to send the card of the day</td><td data-h="Who">No one; we do not keep your name or email from Apple</td><td data-h="Kept">Until the account is deleted</td></tr>
+<tr><td>Notification token</td><td data-h="Why">Notifications</td><td data-h="Who">Apple (APNs)</td><td data-h="Kept">Deleted after the device is silent for 60 days</td></tr>
+<tr><td>Purchases and subscription status</td><td data-h="Why">To unlock the subscription</td><td data-h="Who">Apple, RevenueCat — with the account identifier; the app never sees payment details</td><td data-h="Kept">Until the account is deleted</td></tr>
+<tr><td>Approximate location — only if weather is on</td><td data-h="Why">The weather outside the window</td><td data-h="Who">Apple (WeatherKit)</td><td data-h="Kept">Not kept</td></tr>
+<tr><td>Analytics events: screens, actions, device, language, country</td><td data-h="Why">To understand what works; our own, linked to the account, not used for tracking</td><td data-h="Who">No one</td><td data-h="Kept">25 months; totals without identifiers — indefinitely</td></tr>
+<tr><td>Crash reports — without questions or readings</td><td data-h="Why">To fix errors</td><td data-h="Who">No one</td><td data-h="Kept">90 days</td></tr>
+<tr><td>IP address</td><td data-h="Why">Country for analytics, sign-in protection</td><td data-h="Who">Railway — in its request log</td><td data-h="Kept">Only the country code is kept; at sign-in — up to an hour; in Railway’s log — for Railway’s period</td></tr>
 </tbody>
 </table>
+<p>The text of questions and readings never goes into logs or analytics and is not used for training. Data is not sold; there are no ads and no third-party analytics. The recipients are Railway (hosting), Anthropic, Apple and RevenueCat; they may process data outside the EU, including in the United States. <span class="todo">TODO: legal bases for processing under the GDPR (question 19).</span></p>
 
-<h3>Questions and readings</h3>
-<p>The question you write to the deck is stored on your phone and in a copy on our server, so the diary isn’t lost and can move to a new phone. To check the question, suggest a layout and write the reading, the server sends Anthropic’s Claude model the minimum: the question text, the spread, the cards and the language. A question written with your finger is first read by the model from its drawing (see “Handwriting”). No name, no identifiers, no past spreads. We don’t use questions to train anything and never show them to other people.</p>
-<p>The text of questions and readings never goes into server logs, error messages or analytics. Only the server and the app’s owner have access to the database.</p>
+<h2><span class="n">II</span>Deletion and your rights</h2>
+<p>You can burn a question in the diary: its text and handwriting are wiped from the phone and the server at once. To delete your account — Settings → Account → Delete account: the data on the server, the link to your Apple ID and purchases, and the diary and settings on the phone are wiped, and analytics events lose their link to you. Data leaves backups within 30 days. Deleting the account does not cancel a subscription — cancel it in your Apple ID settings.</p>
+<p>To find out what data we hold about you, or to correct or delete it, write to <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>. In the EU you have rights under the GDPR: access, correction, erasure, restriction, portability, objection, and complaint to a supervisory authority.</p>
 
-<h3>Analytics</h3>
-<p>The app sends events to our server: which screens are opened and which actions are taken (for example, “spread started”), the app and iOS version, phone model, device language and region, App Store storefront and country. The country is looked up from the IP address in a local DB-IP Lite database; the address itself is not saved. The text of questions, readings, notes and searches never goes into events.</p>
-<p>Analytics help us understand what works in the app and what doesn’t. They are always on; there is no separate switch. Events are linked to your account, but they are not used to track you across apps and websites and are not shared with anyone — which is why Apple’s tracking prompt does not appear.</p>
+<h2><span class="n">III</span>Children and changes</h2>
+<p><span class="todo">TODO: age rating and the rule for children — after question 19 is decided.</span> If this policy changes, the new version will appear on this page with a new date. Contact: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
 
-<h3>Crashes</h3>
-<p>If the app crashes or hits an error, a report goes to our server on the next launch: where the error happened, the version, the device. It contains nothing you wrote. Apple may also share its own crash reports with developers if you allow that in iPhone settings.</p>
-
-<h3>Handwriting</h3>
-<p>A question written with your finger is read by the Claude model (Anthropic): when you place the question under the deck, the phone sends our server a drawing of the strokes — a plain image with no colour or background — and the server passes it to the model together with the question check. What comes back is the line as read, and you can correct it. The server does not keep the drawing and does not write it to logs or analytics. The strokes themselves stay with the question, so the envelope and the diary keep your own handwriting.</p>
-
-<h3>Sign in with Apple</h3>
-<p>Your account starts out anonymous. If you sign in with Apple, the server stores the identifier Apple provides — that is how your diary finds you on a new phone. The server does not keep your name or email from Apple.</p>
-
-<h3>Subscription</h3>
-<p>Purchases go through the App Store. The server learns your subscription status from RevenueCat, a service that verifies purchases. The app never sees your payment details.</p>
-
-<h2><span class="n">IV</span>Who receives data</h2>
-<ul>
-<li><b>Anthropic</b> — the question text (or the handwriting drawing, so it can be read), spread, cards and language, so that the Claude model can check the question and write the reading. We use the API, not a consumer product. <span class="todo">TODO: Anthropic’s retention of API requests under our agreement — fill in before launch.</span></li>
-<li><b>Apple</b> — notifications (APNs), weather (WeatherKit), Sign in with Apple, purchases.</li>
-<li><b>RevenueCat</b> — subscription status and your Tarocchi account identifier.</li>
-</ul>
-<p>We don’t sell data and don’t pass it to ad networks. There are no ads in the app.</p>
-
-<h2><span class="n">V</span>Where and how it is stored</h2>
-<p>Data is kept on our server in <span class="todo">TODO: hosting country (question 14)</span>. Disks and backups are encrypted, connections use TLS, and the database is not reachable from the internet <span class="todo">(TODO: confirm once hosting is chosen)</span>. The diary copy is not encrypted with a personal key of yours: someone who gained access to the database could read the questions. That is why access to the database and backups is closed to everyone except the server and the owner.</p>
-
-<h2><span class="n">VI</span>How long it is kept</h2>
-<ul>
-<li>Diary, questions and readings — until you delete them or delete your account.</li>
-<li>A burned question is removed from the phone and the server immediately and for good, handwriting included. It disappears from database backups as they rotate — within 30 days.</li>
-<li>Raw analytics events — 25 months, then deleted. Aggregate numbers (for example, how many spreads were made in a day) are kept indefinitely and are not linked to anyone.</li>
-<li>The print of your 79th card — on the server until the account is deleted.</li>
-<li>Crash reports and the notification token — crash reports for 90 days; the notification token is deleted after 60 days without activity.</li>
-<li>IP address at sign-in — up to one hour, to prevent abuse.</li>
-</ul>
-
-<h2><span class="n">VII</span>What you can do in the app</h2>
-<ul>
-<li><b>Burn a question</b> — in the diary. The text and handwriting burn; the date and cards stay.</li>
-<li><b>Delete the diary</b> — in Settings.</li>
-<li><b>Delete your account</b> — Settings → Account → Delete account. Everything is wiped: the data on the server, the link to your Apple ID and to purchases in RevenueCat, the diary and settings on this phone. Analytics events lose their link to you. This cannot be undone. There is no signing out without deleting: the account and the diary live together.</li>
-<li>Deleting the account does not cancel a subscription — that is done in your Apple ID settings.</li>
-<li>To ask what data we hold about you, or to ask us to delete it, write to <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</li>
-</ul>
-
-<h2><span class="n">VIII</span>Children</h2>
-<p><span class="todo">TODO: age rating and the rule for children — after question 19 is settled.</span></p>
-
-<h2><span class="n">IX</span>Changes</h2>
-<p>If this policy changes, the new version will appear on this page with a new date.</p>
-
-<p class="note">Country by IP uses IP to Country Lite by <a href="https://db-ip.com">DB-IP</a>, licensed under CC BY 4.0.</p>
+<p class="note">Country by IP is determined with the IP to Country Lite database by <a href="https://db-ip.com">DB-IP</a>, licensed under CC BY 4.0.</p>
 </main>
 <footer class="foot"><p>Tarocchi is for entertainment and reflection. The cards don’t predict the future.</p></footer>
 </body>

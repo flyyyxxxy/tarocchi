@@ -18,96 +18,34 @@
 <main class="sheet">
 <p class="draft">Brouillon. Un juriste relit ce texte (question 19) ; d’ici là, il n’est pas définitif.</p>
 <h1>Politique de confidentialité</h1>
-<p class="updated">Mis à jour: TODO date de publication</p>
-<p>Tarocchi est un jeu de tarot sur ton téléphone. Les questions que tu poses au jeu sont personnelles, alors cette page dit simplement ce que l’application sait, où ces données se trouvent et qui peut les voir.</p>
+<p class="updated">Mis à jour: 2026-11-17</p>
+<p>Tarocchi est un jeu de tarot sur ton téléphone. L’application et ce site sont gérés par Ilya Manenkov, développeur indépendant, qui est responsable des données. Ton journal se trouve sur le téléphone, et une copie sur notre serveur chez Railway dans l’UE (Pays-Bas), pour que le journal ne se perde pas et puisse passer sur un nouveau téléphone.</p>
 
-<h2><span class="n">I</span>En bref</h2>
-<ul>
-<li>Le texte de ta question est envoyé au modèle Claude d’Anthropic uniquement pour vérifier la question et écrire la lecture — sans ton nom et sans tes tirages passés.</li>
-<li>L’analyse d’usage est la nôtre : seul le propriétaire de l’application voit les événements. Il n’y a ni outil d’analyse tiers ni publicité, et aucune donnée n’est vendue.</li>
-<li>Ton adresse IP n’est pas conservée pour l’analyse d’usage — seul le pays en est déduit. À la connexion, l’adresse est gardée une heure au plus pour prévenir les abus.</li>
-<li>Supprimer ton compte efface tout : les données sur le serveur et le journal sur le téléphone.</li>
-</ul>
-
-<h2><span class="n">II</span>Qui est responsable des données</h2>
-<p>L’application Tarocchi et ce site sont gérés par Ilya Manenkov, développeur indépendant. Contact : <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
-
-<h2><span class="n">III</span>Ce qui est collecté et où cela se trouve</h2>
+<h2><span class="n">I</span>Quelles données et pourquoi</h2>
 <table class="data">
-<thead><tr><th>Données</th><th>Où elles se trouvent</th><th>Qui les reçoit</th></tr></thead>
+<thead><tr><th>Données</th><th>Pourquoi</th><th>Qui les reçoit</th><th>Combien de temps elles sont conservées</th></tr></thead>
 <tbody>
-<tr><td>Questions au jeu — texte</td><td data-h="Où">Téléphone et notre serveur</td><td data-h="Qui">Anthropic — lors de la vérification de la question et de l’écriture de la lecture</td></tr>
-<tr><td>Écriture manuscrite de la question</td><td data-h="Où">Téléphone et notre serveur</td><td data-h="Qui">Anthropic — une image des traits, pour lire la question ; le serveur ne la conserve pas</td></tr>
-<tr><td>Lectures</td><td data-h="Où">Téléphone et notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Cartes tirées et dates</td><td data-h="Où">Téléphone et notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Langue, fuseau horaire, heure de la carte du jour</td><td data-h="Où">Notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Jeton de l’appareil pour les notifications</td><td data-h="Où">Notre serveur</td><td data-h="Qui">Apple (service de notifications APNs)</td></tr>
-<tr><td>Identifiant Apple — si tu te connectes avec Apple</td><td data-h="Où">Notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>État de l’abonnement</td><td data-h="Où">Notre serveur</td><td data-h="Qui">RevenueCat et Apple</td></tr>
-<tr><td>Position approximative — seulement si la météo derrière la fenêtre est activée</td><td data-h="Où">Non conservée</td><td data-h="Qui">Apple (WeatherKit) — au moment de la requête météo</td></tr>
-<tr><td>Événements d’analyse : écrans, actions, appareil, pays</td><td data-h="Où">Notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Rapports de plantage — sans le contenu des questions ni des lectures</td><td data-h="Où">Notre serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Adresse IP</td><td data-h="Où">Non conservée pour l’analyse, seul le code du pays est gardé ; à la connexion — une heure au plus</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Photo pour la 79e carte</td><td data-h="Où">Non conservée : traitée sur le téléphone, seule l’impression finale en deux couleurs part sur le serveur</td><td data-h="Qui">Personne</td></tr>
-<tr><td>Données du capteur de mouvement</td><td data-h="Où">Non conservées</td><td data-h="Qui">Personne</td></tr>
+<tr><td>Texte de la question, tirage, cartes, langue</td><td data-h="Pourquoi">Vérifier la question et écrire la lecture</td><td data-h="Qui">Anthropic (le modèle Claude), sans ton nom ni tes tirages passés</td><td data-h="Durée">Sur le serveur — jusqu’à la suppression de la question ou du compte. <span class="todo">TODO : durée de conservation chez Anthropic selon le contrat API.</span></td></tr>
+<tr><td>Image d’une question écrite du doigt</td><td data-h="Pourquoi">Lire la question</td><td data-h="Qui">Anthropic</td><td data-h="Durée">Non conservée par le serveur</td></tr>
+<tr><td>79e carte : impression, nom, signification</td><td data-h="Pourquoi">Ta carte personnelle dans les tirages</td><td data-h="Qui">Anthropic — le nom et la signification, pour la lecture ; l’impression — personne</td><td data-h="Durée">Jusqu’à la suppression de la carte ou du compte ; la photo ne quitte jamais le téléphone</td></tr>
+<tr><td>Journal : lectures, cartes, dates</td><td data-h="Pourquoi">Le journal</td><td data-h="Qui">Personne</td><td data-h="Durée">Jusqu’à leur suppression</td></tr>
+<tr><td>Compte : identifiant, identifiant Apple si tu te connectes avec Apple, langue, fuseau horaire</td><td data-h="Pourquoi">Retrouver ton journal sur un nouveau téléphone, envoyer la carte du jour</td><td data-h="Qui">Personne ; nous ne gardons ni ton nom ni ton e-mail transmis par Apple</td><td data-h="Durée">Jusqu’à la suppression du compte</td></tr>
+<tr><td>Jeton de notification</td><td data-h="Pourquoi">Les notifications</td><td data-h="Qui">Apple (APNs)</td><td data-h="Durée">Supprimé si l’appareil reste silencieux 60 jours</td></tr>
+<tr><td>Achats et état de l’abonnement</td><td data-h="Pourquoi">Débloquer l’abonnement</td><td data-h="Qui">Apple, RevenueCat — avec l’identifiant du compte ; l’application ne voit jamais les données de paiement</td><td data-h="Durée">Jusqu’à la suppression du compte</td></tr>
+<tr><td>Position approximative — seulement si la météo est activée</td><td data-h="Pourquoi">La météo derrière la fenêtre</td><td data-h="Qui">Apple (WeatherKit)</td><td data-h="Durée">Non conservée</td></tr>
+<tr><td>Événements d’analyse : écrans, actions, appareil, langue, pays</td><td data-h="Pourquoi">Comprendre ce qui marche ; notre propre analyse, liée au compte, sans suivi</td><td data-h="Qui">Personne</td><td data-h="Durée">25 mois ; les totaux sans identifiants — sans limite</td></tr>
+<tr><td>Rapports de plantage — sans questions ni lectures</td><td data-h="Pourquoi">Corriger les erreurs</td><td data-h="Qui">Personne</td><td data-h="Durée">90 jours</td></tr>
+<tr><td>Adresse IP</td><td data-h="Pourquoi">Le pays pour l’analyse, la protection de la connexion</td><td data-h="Qui">Railway — dans son journal des requêtes</td><td data-h="Durée">Seul le code du pays est conservé ; à la connexion — une heure au plus ; dans le journal de Railway — selon la durée de Railway</td></tr>
 </tbody>
 </table>
+<p>Le texte des questions et des lectures n’apparaît jamais dans les journaux techniques ni dans l’analyse, et ne sert pas à l’entraînement. Les données ne sont pas vendues ; il n’y a ni publicité ni analyse tierce. Les destinataires sont Railway (hébergement), Anthropic, Apple et RevenueCat ; ils peuvent traiter des données hors de l’UE, y compris aux États-Unis. <span class="todo">TODO : bases légales du traitement selon le RGPD (question 19).</span></p>
 
-<h3>Questions et lectures</h3>
-<p>La question que tu écris au jeu est conservée sur ton téléphone et dans une copie sur notre serveur, pour que le journal ne se perde pas et puisse passer sur un nouveau téléphone. Pour vérifier la question, proposer une disposition et écrire la lecture, le serveur envoie au modèle Claude d’Anthropic le minimum : le texte de la question, le tirage, les cartes et la langue. Une question écrite du doigt est d’abord lue par le modèle à partir de son dessin (voir « Écriture manuscrite »). Pas de nom, pas d’identifiant, pas de tirages passés. Nous n’utilisons pas les questions pour entraîner quoi que ce soit et ne les montrons jamais à d’autres personnes.</p>
-<p>Le texte des questions et des lectures n’apparaît jamais dans les journaux du serveur, les messages d’erreur ou l’analyse d’usage. Seuls le serveur et le propriétaire de l’application ont accès à la base de données.</p>
+<h2><span class="n">II</span>Suppression et tes droits</h2>
+<p>Tu peux brûler une question dans le journal : son texte et son écriture manuscrite sont effacés tout de suite du téléphone et du serveur. Pour supprimer ton compte — Réglages → Compte → Supprimer le compte : sont effacés les données sur le serveur, le lien avec ton identifiant Apple et avec les achats, ainsi que le journal et les réglages sur le téléphone ; les événements d’analyse perdent leur lien avec toi. Les données quittent les sauvegardes sous 30 jours. Supprimer le compte ne résilie pas l’abonnement — cela se fait dans les réglages de ton identifiant Apple.</p>
+<p>Pour savoir quelles données nous avons sur toi, ou pour les corriger ou les supprimer, écris à <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>. Dans l’UE, tu as des droits selon le RGPD : accès, rectification, effacement, limitation, portabilité, opposition et réclamation auprès d’une autorité de contrôle.</p>
 
-<h3>Analyse d’usage</h3>
-<p>L’application envoie des événements à notre serveur : quels écrans sont ouverts et quelles actions sont faites (par exemple « tirage commencé »), la version de l’application et d’iOS, le modèle du téléphone, la langue et la région de l’appareil, la boutique App Store et le pays. Le pays est déterminé à partir de l’adresse IP dans une base locale DB-IP Lite ; l’adresse elle-même n’est pas enregistrée. Le texte des questions, des lectures, des notes et des recherches n’apparaît jamais dans les événements.</p>
-<p>L’analyse d’usage nous aide à comprendre ce qui marche dans l’application et ce qui ne marche pas. Elle est toujours active ; il n’y a pas d’interrupteur séparé. Les événements sont liés à ton compte, mais ils ne servent pas à te suivre d’une application ou d’un site à l’autre et ne sont transmis à personne — c’est pourquoi la demande de suivi d’Apple n’apparaît pas.</p>
-
-<h3>Plantages</h3>
-<p>Si l’application plante ou rencontre une erreur, un rapport part vers notre serveur au lancement suivant : où l’erreur s’est produite, la version, l’appareil. Il ne contient rien de ce que tu as écrit. Apple peut aussi transmettre ses propres rapports de plantage aux développeurs si tu l’autorises dans les réglages de l’iPhone.</p>
-
-<h3>Écriture manuscrite</h3>
-<p>Une question écrite du doigt est lue par le modèle Claude (Anthropic) : quand tu glisses la question sous le jeu, le téléphone envoie à notre serveur un dessin des traits — une image simple, sans couleur ni fond — et le serveur la transmet au modèle avec la vérification de la question. En retour arrive la ligne telle qu’elle a été lue, et tu peux la corriger. Le serveur ne conserve pas le dessin et ne l’écrit ni dans les journaux ni dans l’analyse d’usage. Les traits eux-mêmes restent avec la question, pour que l’enveloppe et le journal gardent ta propre écriture.</p>
-
-<h3>Connexion avec Apple</h3>
-<p>Ton compte commence anonyme. Si tu te connectes avec Apple, le serveur conserve l’identifiant fourni par Apple — c’est ainsi que ton journal te retrouve sur un nouveau téléphone. Le serveur ne garde ni ton nom ni ton adresse e-mail transmis par Apple.</p>
-
-<h3>Abonnement</h3>
-<p>Les achats passent par l’App Store. Le serveur apprend l’état de ton abonnement par RevenueCat, un service qui vérifie les achats. L’application ne voit jamais tes données de paiement.</p>
-
-<h2><span class="n">IV</span>Qui reçoit des données</h2>
-<ul>
-<li><b>Anthropic</b> — le texte de la question (ou le dessin de l’écriture, pour pouvoir le lire), le tirage, les cartes et la langue, pour que le modèle Claude puisse vérifier la question et écrire la lecture. Nous utilisons l’API, pas un produit grand public. <span class="todo">TODO : durée de conservation des requêtes API par Anthropic selon notre contrat — à compléter avant le lancement.</span></li>
-<li><b>Apple</b> — notifications (APNs), météo (WeatherKit), connexion avec Apple, achats.</li>
-<li><b>RevenueCat</b> — état de l’abonnement et identifiant de ton compte Tarocchi.</li>
-</ul>
-<p>Nous ne vendons pas de données et ne les transmettons pas à des réseaux publicitaires. Il n’y a pas de publicité dans l’application.</p>
-
-<h2><span class="n">V</span>Où et comment elles sont conservées</h2>
-<p>Les données sont conservées sur notre serveur en <span class="todo">TODO : pays d’hébergement (question 14)</span>. Les disques et les sauvegardes sont chiffrés, les connexions passent par TLS, et la base de données n’est pas accessible depuis Internet <span class="todo">(TODO : à confirmer une fois l’hébergeur choisi)</span>. La copie du journal n’est pas chiffrée avec une clé personnelle à toi : quelqu’un qui obtiendrait l’accès à la base de données pourrait lire les questions. C’est pourquoi l’accès à la base et aux sauvegardes est fermé à tous, sauf au serveur et au propriétaire.</p>
-
-<h2><span class="n">VI</span>Combien de temps elles sont conservées</h2>
-<ul>
-<li>Journal, questions et lectures — jusqu’à ce que tu les supprimes ou que tu supprimes ton compte.</li>
-<li>Une question brûlée est retirée du téléphone et du serveur immédiatement et pour de bon, écriture manuscrite comprise. Elle disparaît des sauvegardes de la base au fil de leur rotation — sous 30 jours.</li>
-<li>Événements d’analyse bruts — 25 mois, puis supprimés. Les chiffres agrégés (par exemple, combien de tirages ont été faits dans une journée) sont conservés sans limite et ne sont liés à personne.</li>
-<li>L’impression de ta 79e carte — sur le serveur jusqu’à la suppression du compte.</li>
-<li>Rapports de plantage et jeton de notification — les rapports de plantage pendant 90 jours ; le jeton de notification est supprimé après 60 jours sans activité.</li>
-<li>Adresse IP à la connexion — une heure au plus, pour prévenir les abus.</li>
-</ul>
-
-<h2><span class="n">VII</span>Ce que tu peux faire dans l’application</h2>
-<ul>
-<li><b>Brûler une question</b> — dans le journal. Le texte et l’écriture manuscrite brûlent ; la date et les cartes restent.</li>
-<li><b>Supprimer le journal</b> — dans les Réglages.</li>
-<li><b>Supprimer ton compte</b> — Réglages → Compte → Supprimer le compte. Tout est effacé : les données sur le serveur, le lien avec ton identifiant Apple et avec les achats dans RevenueCat, le journal et les réglages sur ce téléphone. Les événements d’analyse perdent leur lien avec toi. C’est définitif. Il n’y a pas de déconnexion sans suppression : le compte et le journal vivent ensemble.</li>
-<li>Supprimer le compte ne résilie pas l’abonnement — cela se fait dans les réglages de ton identifiant Apple.</li>
-<li>Pour demander quelles données nous avons sur toi, ou nous demander de les supprimer, écris à <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</li>
-</ul>
-
-<h2><span class="n">VIII</span>Enfants</h2>
-<p><span class="todo">TODO : classification par âge et règle pour les enfants — après la décision sur la question 19.</span></p>
-
-<h2><span class="n">IX</span>Modifications</h2>
-<p>Si cette politique change, la nouvelle version apparaîtra sur cette page avec une nouvelle date.</p>
+<h2><span class="n">III</span>Enfants et modifications</h2>
+<p><span class="todo">TODO : classification par âge et règle pour les enfants — après la décision sur la question 19.</span> Si cette politique change, la nouvelle version apparaîtra sur cette page avec une nouvelle date. Contact : <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
 
 <p class="note">Le pays d’après l’IP est déterminé avec IP to Country Lite de <a href="https://db-ip.com">DB-IP</a>, sous licence CC BY 4.0.</p>
 </main>

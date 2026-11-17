@@ -18,96 +18,34 @@
 <main class="sheet">
 <p class="draft">Entwurf. Dieser Text wird juristisch geprüft (Frage 19); bis dahin ist er nicht endgültig.</p>
 <h1>Datenschutzerklärung</h1>
-<p class="updated">Aktualisiert: TODO publication date</p>
-<p>Tarocchi ist ein Tarotdeck auf deinem Handy. Die Fragen, die du dem Deck stellst, sind persönlich. Deshalb steht hier klar, was die App weiß, wo es liegt und wer es sehen kann.</p>
+<p class="updated">Aktualisiert: 2026-11-17</p>
+<p>Tarocchi ist ein Tarotdeck auf deinem Handy. Die App und diese Website betreibt Ilya Manenkov, ein unabhängiger Entwickler; er ist für die Daten verantwortlich. Dein Tagebuch liegt auf dem Handy, eine Kopie auf unserem Server bei Railway in der EU (Niederlande), damit das Tagebuch nicht verloren geht und auf ein neues Handy umziehen kann.</p>
 
-<h2><span class="n">I</span>Kurz gesagt</h2>
-<ul>
-<li>Der Text deiner Frage geht an das Modell Claude von Anthropic, nur um die Frage zu prüfen und die Deutung zu schreiben — ohne deinen Namen und ohne deine früheren Legungen.</li>
-<li>Die Analyse ist unsere eigene: Nur der Inhaber der App sieht die Ereignisse. Es gibt keine Analyse durch Dritte und keine Werbung, und es werden keine Daten verkauft.</li>
-<li>Deine IP-Adresse wird für die Analyse nicht gespeichert — aus ihr wird nur das Land bestimmt. Bei der Anmeldung wird die Adresse bis zu einer Stunde aufbewahrt, um Missbrauch zu verhindern.</li>
-<li>Wenn du dein Konto löschst, wird alles gelöscht: die Daten auf dem Server und das Tagebuch auf dem Handy.</li>
-</ul>
-
-<h2><span class="n">II</span>Wer für die Daten verantwortlich ist</h2>
-<p>Die App Tarocchi und diese Website betreibt Ilya Manenkov, ein unabhängiger Entwickler. Kontakt: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
-
-<h2><span class="n">III</span>Was erhoben wird und wo es liegt</h2>
+<h2><span class="n">I</span>Welche Daten und wozu</h2>
 <table class="data">
-<thead><tr><th>Daten</th><th>Wo sie liegen</th><th>Wer sie erhält</th></tr></thead>
+<thead><tr><th>Daten</th><th>Wozu</th><th>Wer sie erhält</th><th>Wie lange sie aufbewahrt werden</th></tr></thead>
 <tbody>
-<tr><td>Fragen an das Deck — Text</td><td data-h="Wo">Handy und unser Server</td><td data-h="Wer">Anthropic — wenn die Frage geprüft und die Deutung geschrieben wird</td></tr>
-<tr><td>Handschrift der Frage</td><td data-h="Wo">Handy und unser Server</td><td data-h="Wer">Anthropic — ein Bild der Striche, um die Frage zu lesen; der Server bewahrt es nicht auf</td></tr>
-<tr><td>Deutungen</td><td data-h="Wo">Handy und unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Gezogene Karten und Daten</td><td data-h="Wo">Handy und unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Sprache, Zeitzone, Uhrzeit der Tageskarte</td><td data-h="Wo">Unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Gerätetoken für Mitteilungen</td><td data-h="Wo">Unser Server</td><td data-h="Wer">Apple (Mitteilungsdienst APNs)</td></tr>
-<tr><td>Apple-Kennung — wenn du dich mit Apple anmeldest</td><td data-h="Wo">Unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Abostatus</td><td data-h="Wo">Unser Server</td><td data-h="Wer">RevenueCat und Apple</td></tr>
-<tr><td>Ungefährer Standort — nur wenn das Wetter vor dem Fenster eingeschaltet ist</td><td data-h="Wo">Nicht gespeichert</td><td data-h="Wer">Apple (WeatherKit) — im Moment der Wetterabfrage</td></tr>
-<tr><td>Analyseereignisse: Bildschirme, Aktionen, Gerät, Land</td><td data-h="Wo">Unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Absturzberichte — ohne den Inhalt von Fragen oder Deutungen</td><td data-h="Wo">Unser Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>IP-Adresse</td><td data-h="Wo">Für die Analyse nicht gespeichert, nur der Ländercode bleibt; bei der Anmeldung — bis zu einer Stunde</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Foto für die 79. Karte</td><td data-h="Wo">Nicht gespeichert: wird auf dem Handy verarbeitet, nur der fertige zweifarbige Druck geht an den Server</td><td data-h="Wer">Niemand</td></tr>
-<tr><td>Daten des Bewegungssensors</td><td data-h="Wo">Nicht gespeichert</td><td data-h="Wer">Niemand</td></tr>
+<tr><td>Text der Frage, Legung, Karten, Sprache</td><td data-h="Wozu">Die Frage prüfen und die Deutung schreiben</td><td data-h="Wer">Anthropic (das Modell Claude), ohne deinen Namen und ohne frühere Legungen</td><td data-h="Dauer">Auf dem Server — bis die Frage oder das Konto gelöscht wird. <span class="todo">TODO: Aufbewahrung bei Anthropic nach dem API-Vertrag.</span></td></tr>
+<tr><td>Bild einer mit dem Finger geschriebenen Frage</td><td data-h="Wozu">Die Frage lesen</td><td data-h="Wer">Anthropic</td><td data-h="Dauer">Der Server bewahrt es nicht auf</td></tr>
+<tr><td>79. Karte: Druck, Name, Bedeutung</td><td data-h="Wozu">Deine persönliche Karte in Legungen</td><td data-h="Wer">Anthropic — Name und Bedeutung, für die Deutung; den Druck — niemand</td><td data-h="Dauer">Bis die Karte oder das Konto gelöscht wird; das Foto verlässt das Handy nie</td></tr>
+<tr><td>Tagebuch: Deutungen, Karten, Daten</td><td data-h="Wozu">Das Tagebuch</td><td data-h="Wer">Niemand</td><td data-h="Dauer">Bis zur Löschung</td></tr>
+<tr><td>Konto: Kennung, Apple-ID bei Anmeldung mit Apple, Sprache, Zeitzone</td><td data-h="Wozu">Dein Tagebuch auf einem neuen Handy finden, die Tageskarte schicken</td><td data-h="Wer">Niemand; Namen und E-Mail-Adresse von Apple bewahren wir nicht auf</td><td data-h="Dauer">Bis das Konto gelöscht wird</td></tr>
+<tr><td>Token für Mitteilungen</td><td data-h="Wozu">Mitteilungen</td><td data-h="Wer">Apple (APNs)</td><td data-h="Dauer">Gelöscht, wenn das Gerät 60 Tage stumm bleibt</td></tr>
+<tr><td>Käufe und Abostatus</td><td data-h="Wozu">Das Abo freischalten</td><td data-h="Wer">Apple, RevenueCat — mit der Kennung des Kontos; Zahlungsdaten sieht die App nie</td><td data-h="Dauer">Bis das Konto gelöscht wird</td></tr>
+<tr><td>Ungefährer Standort — nur wenn das Wetter eingeschaltet ist</td><td data-h="Wozu">Das Wetter vor dem Fenster</td><td data-h="Wer">Apple (WeatherKit)</td><td data-h="Dauer">Nicht gespeichert</td></tr>
+<tr><td>Analyseereignisse: Bildschirme, Aktionen, Gerät, Sprache, Land</td><td data-h="Wozu">Verstehen, was funktioniert; unsere eigene Analyse, mit dem Konto verknüpft, kein Tracking</td><td data-h="Wer">Niemand</td><td data-h="Dauer">25 Monate; Summen ohne Kennungen — unbegrenzt</td></tr>
+<tr><td>Absturzberichte — ohne Fragen oder Deutungen</td><td data-h="Wozu">Fehler beheben</td><td data-h="Wer">Niemand</td><td data-h="Dauer">90 Tage</td></tr>
+<tr><td>IP-Adresse</td><td data-h="Wozu">Land für die Analyse, Schutz der Anmeldung</td><td data-h="Wer">Railway — im Anfrageprotokoll</td><td data-h="Dauer">Gespeichert wird nur der Ländercode; bei der Anmeldung — bis zu einer Stunde; im Protokoll von Railway — so lange, wie Railway es aufbewahrt</td></tr>
 </tbody>
 </table>
+<p>Der Text von Fragen und Deutungen landet nie in Protokollen oder in der Analyse und wird nicht zum Training verwendet. Daten werden nicht verkauft; es gibt keine Werbung und keine Analyse durch Dritte. Empfänger sind Railway (Hosting), Anthropic, Apple und RevenueCat; sie können Daten außerhalb der EU verarbeiten, auch in den USA. <span class="todo">TODO: Rechtsgrundlagen der Verarbeitung nach der DSGVO (Frage 19).</span></p>
 
-<h3>Fragen und Deutungen</h3>
-<p>Die Frage, die du dem Deck schreibst, wird auf deinem Handy gespeichert und als Kopie auf unserem Server, damit das Tagebuch nicht verloren geht und auf ein neues Handy umziehen kann. Um die Frage zu prüfen, eine Legung vorzuschlagen und die Deutung zu schreiben, schickt der Server dem Modell Claude von Anthropic nur das Nötigste: den Text der Frage, die Legung, die Karten und die Sprache. Eine mit dem Finger geschriebene Frage liest das Modell zuerst aus ihrer Zeichnung (siehe „Handschrift“). Kein Name, keine Kennungen, keine früheren Legungen. Wir verwenden Fragen nicht zum Training und zeigen sie nie anderen Menschen.</p>
-<p>Der Text von Fragen und Deutungen landet nie in Serverprotokollen, Fehlermeldungen oder in der Analyse. Zugriff auf die Datenbank haben nur der Server und der Inhaber der App.</p>
+<h2><span class="n">II</span>Löschen und deine Rechte</h2>
+<p>Eine Frage kannst du im Tagebuch verbrennen: Text und Handschrift werden sofort vom Handy und vom Server gelöscht. Dein Konto löschen — Einstellungen → Konto → Konto löschen: Gelöscht werden die Daten auf dem Server, die Verknüpfung mit deiner Apple-ID und mit den Käufen sowie Tagebuch und Einstellungen auf dem Handy; Analyseereignisse verlieren die Verknüpfung mit dir. Aus den Sicherungen verschwinden die Daten innerhalb von 30 Tagen. Das Löschen des Kontos kündigt kein Abo — das geschieht in den Einstellungen deiner Apple-ID.</p>
+<p>Wenn du wissen möchtest, welche Daten wir über dich haben, oder sie berichtigen oder löschen lassen möchtest, schreib an <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>. In der EU hast du Rechte nach der DSGVO: Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch und Beschwerde bei einer Aufsichtsbehörde.</p>
 
-<h3>Analyse</h3>
-<p>Die App schickt Ereignisse an unseren Server: welche Bildschirme geöffnet und welche Aktionen ausgeführt werden (zum Beispiel „Legung begonnen“), die Version der App und von iOS, das Handymodell, Sprache und Region des Geräts, die App-Store-Region und das Land. Das Land wird aus der IP-Adresse in einer lokalen Datenbank DB-IP Lite ermittelt; die Adresse selbst wird nicht gespeichert. Der Text von Fragen, Deutungen, Notizen und Suchanfragen gelangt nie in Ereignisse.</p>
-<p>Die Analyse hilft uns zu verstehen, was in der App funktioniert und was nicht. Sie ist immer eingeschaltet; einen eigenen Schalter gibt es nicht. Die Ereignisse sind mit deinem Konto verknüpft, werden aber nicht genutzt, um dich über Apps und Websites hinweg zu verfolgen, und an niemanden weitergegeben — deshalb erscheint Apples Abfrage zum Tracking nicht.</p>
-
-<h3>Abstürze</h3>
-<p>Stürzt die App ab oder trifft sie auf einen Fehler, geht beim nächsten Start ein Bericht an unseren Server: wo der Fehler auftrat, die Version, das Gerät. Er enthält nichts, was du geschrieben hast. Auch Apple kann eigene Absturzberichte an Entwickler weitergeben, wenn du das in den iPhone-Einstellungen erlaubst.</p>
-
-<h3>Handschrift</h3>
-<p>Eine mit dem Finger geschriebene Frage liest das Modell Claude (Anthropic): Wenn du die Frage unter das Deck legst, schickt das Handy unserem Server eine Zeichnung der Striche — ein schlichtes Bild ohne Farbe und Hintergrund —, und der Server gibt sie zusammen mit der Prüfung der Frage an das Modell weiter. Zurück kommt die gelesene Zeile, und du kannst sie korrigieren. Der Server bewahrt die Zeichnung nicht auf und schreibt sie weder in Protokolle noch in die Analyse. Die Striche selbst bleiben bei der Frage, damit Umschlag und Tagebuch deine eigene Handschrift behalten.</p>
-
-<h3>Mit Apple anmelden</h3>
-<p>Dein Konto beginnt anonym. Wenn du dich mit Apple anmeldest, speichert der Server die Kennung, die Apple übermittelt — so findet dich dein Tagebuch auf einem neuen Handy. Deinen Namen und deine E-Mail-Adresse von Apple bewahrt der Server nicht auf.</p>
-
-<h3>Abo</h3>
-<p>Käufe laufen über den App Store. Den Abostatus erfährt der Server von RevenueCat, einem Dienst, der Käufe prüft. Die App sieht deine Zahlungsdaten nie.</p>
-
-<h2><span class="n">IV</span>Wer Daten erhält</h2>
-<ul>
-<li><b>Anthropic</b> — den Text der Frage (oder die Zeichnung der Handschrift, damit sie gelesen werden kann), die Legung, die Karten und die Sprache, damit das Modell Claude die Frage prüfen und die Deutung schreiben kann. Wir nutzen die API, kein Verbraucherprodukt. <span class="todo">TODO: Aufbewahrung der API-Anfragen bei Anthropic nach unserem Vertrag — vor dem Start ergänzen.</span></li>
-<li><b>Apple</b> — Mitteilungen (APNs), Wetter (WeatherKit), Mit Apple anmelden, Käufe.</li>
-<li><b>RevenueCat</b> — Abostatus und die Kennung deines Tarocchi-Kontos.</li>
-</ul>
-<p>Wir verkaufen keine Daten und geben sie nicht an Werbenetzwerke weiter. In der App gibt es keine Werbung.</p>
-
-<h2><span class="n">V</span>Wo und wie gespeichert wird</h2>
-<p>Die Daten liegen auf unserem Server in <span class="todo">TODO: Land des Hostings (Frage 14)</span>. Festplatten und Sicherungen sind verschlüsselt, Verbindungen nutzen TLS, und die Datenbank ist aus dem Internet nicht erreichbar <span class="todo">(TODO: bestätigen, sobald das Hosting gewählt ist)</span>. Die Kopie des Tagebuchs ist nicht mit einem persönlichen Schlüssel von dir verschlüsselt: Wer Zugriff auf die Datenbank erlangt, könnte die Fragen lesen. Deshalb ist der Zugriff auf Datenbank und Sicherungen für alle gesperrt außer für den Server und den Inhaber.</p>
-
-<h2><span class="n">VI</span>Wie lange aufbewahrt wird</h2>
-<ul>
-<li>Tagebuch, Fragen und Deutungen — bis du sie oder dein Konto löschst.</li>
-<li>Eine verbrannte Frage wird sofort und endgültig vom Handy und vom Server entfernt, die Handschrift eingeschlossen. Aus den Datenbanksicherungen verschwindet sie, sobald diese rotieren — innerhalb von 30 Tagen.</li>
-<li>Rohe Analyseereignisse — 25 Monate, danach werden sie gelöscht. Zusammengefasste Zahlen (zum Beispiel, wie viele Legungen an einem Tag gemacht wurden) bleiben unbegrenzt erhalten und sind mit niemandem verknüpft.</li>
-<li>Der Druck deiner 79. Karte — auf dem Server, bis das Konto gelöscht wird.</li>
-<li>Absturzberichte und Mitteilungstoken — Absturzberichte 90 Tage; das Mitteilungstoken wird nach 60 Tagen ohne Aktivität gelöscht.</li>
-<li>IP-Adresse bei der Anmeldung — bis zu einer Stunde, um Missbrauch zu verhindern.</li>
-</ul>
-
-<h2><span class="n">VII</span>Was du in der App tun kannst</h2>
-<ul>
-<li><b>Eine Frage verbrennen</b> — im Tagebuch. Text und Handschrift verbrennen; Datum und Karten bleiben.</li>
-<li><b>Das Tagebuch löschen</b> — in den Einstellungen.</li>
-<li><b>Dein Konto löschen</b> — Einstellungen → Konto → Konto löschen. Alles wird gelöscht: die Daten auf dem Server, die Verknüpfung mit deiner Apple-ID und mit den Käufen bei RevenueCat, Tagebuch und Einstellungen auf diesem Handy. Analyseereignisse verlieren die Verknüpfung mit dir. Das lässt sich nicht rückgängig machen. Ein Abmelden ohne Löschen gibt es nicht: Konto und Tagebuch gehören zusammen.</li>
-<li>Das Löschen des Kontos kündigt kein Abo — das geschieht in den Einstellungen deiner Apple-ID.</li>
-<li>Wenn du wissen möchtest, welche Daten wir über dich haben, oder ihre Löschung verlangen möchtest, schreib an <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</li>
-</ul>
-
-<h2><span class="n">VIII</span>Kinder</h2>
-<p><span class="todo">TODO: Altersfreigabe und Regel für Kinder — nachdem Frage 19 geklärt ist.</span></p>
-
-<h2><span class="n">IX</span>Änderungen</h2>
-<p>Ändert sich diese Erklärung, erscheint die neue Fassung auf dieser Seite mit einem neuen Datum.</p>
+<h2><span class="n">III</span>Kinder und Änderungen</h2>
+<p><span class="todo">TODO: Altersfreigabe und Regel für Kinder — nachdem Frage 19 geklärt ist.</span> Ändert sich diese Erklärung, erscheint die neue Fassung auf dieser Seite mit einem neuen Datum. Kontakt: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
 
 <p class="note">Das Land nach IP-Adresse bestimmt IP to Country Lite von <a href="https://db-ip.com">DB-IP</a>, lizenziert unter CC BY 4.0.</p>
 </main>

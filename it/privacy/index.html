@@ -18,96 +18,34 @@
 <main class="sheet">
 <p class="draft">Bozza. Un avvocato sta esaminando questo testo (questione 19); fino ad allora non è definitivo.</p>
 <h1>Informativa sulla privacy</h1>
-<p class="updated">Aggiornato: TODO publication date</p>
-<p>Tarocchi è un mazzo di tarocchi sul tuo telefono. Le domande che fai al mazzo sono personali, perciò questa pagina dice con chiarezza che cosa sa l’app, dove si trova e chi può vederlo.</p>
+<p class="updated">Aggiornato: 2026-11-17</p>
+<p>Tarocchi è un mazzo di tarocchi sul tuo telefono. L’app e questo sito sono gestiti da Ilya Manenkov, sviluppatore indipendente, che è responsabile dei dati. Il tuo diario vive sul telefono, e una copia è conservata sul nostro server presso Railway nell’UE (Paesi Bassi), così il diario non va perso e può passare a un nuovo telefono.</p>
 
-<h2><span class="n">I</span>In breve</h2>
-<ul>
-<li>Il testo della tua domanda va al modello Claude di Anthropic solo per controllare la domanda e scrivere la lettura — senza il tuo nome e senza le tue stese precedenti.</li>
-<li>L’analitica è nostra: gli eventi li vede solo il titolare dell’app. Non ci sono analitiche di terze parti né pubblicità, e nessun dato viene venduto.</li>
-<li>Il tuo indirizzo IP non viene conservato per l’analitica — se ne ricava solo il paese. All’accesso l’indirizzo viene conservato per non più di un’ora, per prevenire abusi.</li>
-<li>Eliminare l’account cancella tutto: i dati sul server e il diario sul telefono.</li>
-</ul>
-
-<h2><span class="n">II</span>Chi è responsabile dei dati</h2>
-<p>L’app Tarocchi e questo sito sono gestiti da Ilya Manenkov, sviluppatore indipendente. Contatto: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
-
-<h2><span class="n">III</span>Che cosa viene raccolto e dove si trova</h2>
+<h2><span class="n">I</span>Quali dati e perché</h2>
 <table class="data">
-<thead><tr><th>Dati</th><th>Dove si trovano</th><th>Chi li riceve</th></tr></thead>
+<thead><tr><th>Dati</th><th>Perché</th><th>Chi li riceve</th><th>Per quanto tempo si conservano</th></tr></thead>
 <tbody>
-<tr><td>Domande al mazzo — testo</td><td data-h="Dove">Telefono e nostro server</td><td data-h="Chi">Anthropic — quando la domanda viene controllata e la lettura scritta</td></tr>
-<tr><td>Scrittura a mano della domanda</td><td data-h="Dove">Telefono e nostro server</td><td data-h="Chi">Anthropic — un’immagine dei tratti, per leggere la domanda; il server non la conserva</td></tr>
-<tr><td>Letture</td><td data-h="Dove">Telefono e nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Carte estratte e date</td><td data-h="Dove">Telefono e nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Lingua, fuso orario, ora della carta del giorno</td><td data-h="Dove">Nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Token del dispositivo per le notifiche</td><td data-h="Dove">Nostro server</td><td data-h="Chi">Apple (servizio di notifiche APNs)</td></tr>
-<tr><td>Identificativo Apple — se accedi con Apple</td><td data-h="Dove">Nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Stato dell’abbonamento</td><td data-h="Dove">Nostro server</td><td data-h="Chi">RevenueCat e Apple</td></tr>
-<tr><td>Posizione approssimativa — solo se il meteo fuori dalla finestra è attivo</td><td data-h="Dove">Non conservata</td><td data-h="Chi">Apple (WeatherKit) — al momento della richiesta del meteo</td></tr>
-<tr><td>Eventi di analitica: schermate, azioni, dispositivo, paese</td><td data-h="Dove">Nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Rapporti sugli arresti anomali — senza il contenuto di domande o letture</td><td data-h="Dove">Nostro server</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Indirizzo IP</td><td data-h="Dove">Non conservato per l’analitica, si conserva solo il codice del paese; all’accesso — fino a un’ora</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Foto per la 79ª carta</td><td data-h="Dove">Non conservata: elaborata sul telefono, al server va solo la stampa finita a due colori</td><td data-h="Chi">Nessuno</td></tr>
-<tr><td>Dati dei sensori di movimento</td><td data-h="Dove">Non conservati</td><td data-h="Chi">Nessuno</td></tr>
+<tr><td>Testo della domanda, stesa, carte, lingua</td><td data-h="Perché">Per controllare la domanda e scrivere la lettura</td><td data-h="Chi">Anthropic (il modello Claude), senza il tuo nome e senza le stese precedenti</td><td data-h="Durata">Sul server — finché la domanda o l’account non vengono eliminati. <span class="todo">TODO: conservazione presso Anthropic secondo l’accordo API.</span></td></tr>
+<tr><td>Immagine di una domanda scritta con il dito</td><td data-h="Perché">Per leggere la domanda</td><td data-h="Chi">Anthropic</td><td data-h="Durata">Il server non la conserva</td></tr>
+<tr><td>79ª carta: stampa, nome, significato</td><td data-h="Perché">La tua carta personale nelle stese</td><td data-h="Chi">Anthropic — nome e significato, per la lettura; la stampa — nessuno</td><td data-h="Durata">Finché la carta o l’account non vengono eliminati; la foto non lascia mai il telefono</td></tr>
+<tr><td>Diario: letture, carte, date</td><td data-h="Perché">Il diario</td><td data-h="Chi">Nessuno</td><td data-h="Durata">Finché non viene eliminato</td></tr>
+<tr><td>Account: identificativo, ID Apple se accedi con Apple, lingua, fuso orario</td><td data-h="Perché">Per ritrovare il tuo diario su un nuovo telefono, per inviare la carta del giorno</td><td data-h="Chi">Nessuno; non conserviamo il nome né l’e-mail che arrivano da Apple</td><td data-h="Durata">Finché l’account non viene eliminato</td></tr>
+<tr><td>Token delle notifiche</td><td data-h="Perché">Notifiche</td><td data-h="Chi">Apple (APNs)</td><td data-h="Durata">Eliminato se il dispositivo tace per 60 giorni</td></tr>
+<tr><td>Acquisti e stato dell’abbonamento</td><td data-h="Perché">Per sbloccare l’abbonamento</td><td data-h="Chi">Apple, RevenueCat — con l’identificativo dell’account; l’app non vede mai i dati di pagamento</td><td data-h="Durata">Finché l’account non viene eliminato</td></tr>
+<tr><td>Posizione approssimativa — solo se il meteo è attivo</td><td data-h="Perché">Il meteo fuori dalla finestra</td><td data-h="Chi">Apple (WeatherKit)</td><td data-h="Durata">Non conservata</td></tr>
+<tr><td>Eventi di analitica: schermate, azioni, dispositivo, lingua, paese</td><td data-h="Perché">Per capire che cosa funziona; analitica nostra, collegata all’account, non usata per il tracciamento</td><td data-h="Chi">Nessuno</td><td data-h="Durata">25 mesi; i totali senza identificativi — a tempo indeterminato</td></tr>
+<tr><td>Rapporti sugli arresti anomali — senza domande né letture</td><td data-h="Perché">Per correggere gli errori</td><td data-h="Chi">Nessuno</td><td data-h="Durata">90 giorni</td></tr>
+<tr><td>Indirizzo IP</td><td data-h="Perché">Il paese per l’analitica, la protezione dell’accesso</td><td data-h="Chi">Railway — nel suo registro delle richieste</td><td data-h="Durata">Si conserva solo il codice del paese; all’accesso — fino a un’ora; nel registro di Railway — per il periodo di Railway</td></tr>
 </tbody>
 </table>
+<p>Il testo di domande e letture non finisce mai nei log né nell’analitica e non viene usato per l’addestramento. I dati non vengono venduti; non ci sono pubblicità né analitiche di terze parti. I destinatari sono Railway (hosting), Anthropic, Apple e RevenueCat; possono trattare i dati fuori dall’UE, anche negli Stati Uniti. <span class="todo">TODO: basi giuridiche del trattamento secondo il GDPR (questione 19).</span></p>
 
-<h3>Domande e letture</h3>
-<p>La domanda che scrivi al mazzo è conservata sul tuo telefono e in una copia sul nostro server, così il diario non va perso e può passare a un nuovo telefono. Per controllare la domanda, suggerire uno schema e scrivere la lettura, il server invia al modello Claude di Anthropic il minimo indispensabile: il testo della domanda, la stesa, le carte e la lingua. Una domanda scritta con il dito viene prima letta dal modello dal suo disegno (vedi “Scrittura a mano”). Nessun nome, nessun identificativo, nessuna stesa precedente. Non usiamo le domande per addestrare nulla e non le mostriamo mai ad altre persone.</p>
-<p>Il testo di domande e letture non finisce mai nei log del server, nei messaggi di errore o nell’analitica. Al database hanno accesso solo il server e il titolare dell’app.</p>
+<h2><span class="n">II</span>Eliminazione e i tuoi diritti</h2>
+<p>Puoi bruciare una domanda nel diario: il testo e la scrittura a mano vengono cancellati subito dal telefono e dal server. Per eliminare l’account — Impostazioni → Account → Elimina l’account: vengono cancellati i dati sul server, il collegamento al tuo ID Apple e agli acquisti, il diario e le impostazioni sul telefono, e gli eventi di analitica perdono il collegamento con te. I dati spariscono dai backup entro 30 giorni. Eliminare l’account non disdice l’abbonamento — disdicilo nelle impostazioni del tuo ID Apple.</p>
+<p>Per sapere quali dati abbiamo su di te, o per correggerli o eliminarli, scrivi a <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>. Nell’UE hai i diritti previsti dal GDPR: accesso, rettifica, cancellazione, limitazione, portabilità, opposizione e reclamo a un’autorità di controllo.</p>
 
-<h3>Analitica</h3>
-<p>L’app invia eventi al nostro server: quali schermate vengono aperte e quali azioni vengono compiute (per esempio, “stesa iniziata”), la versione dell’app e di iOS, il modello di telefono, la lingua e la regione del dispositivo, il negozio App Store e il paese. Il paese viene ricavato dall’indirizzo IP in un database locale DB-IP Lite; l’indirizzo in sé non viene salvato. Il testo di domande, letture, note e ricerche non finisce mai negli eventi.</p>
-<p>L’analitica ci aiuta a capire che cosa funziona nell’app e che cosa no. È sempre attiva; non c’è un interruttore separato. Gli eventi sono collegati al tuo account, ma non vengono usati per tracciarti tra app e siti web e non vengono condivisi con nessuno — per questo la richiesta di tracciamento di Apple non compare.</p>
-
-<h3>Arresti anomali</h3>
-<p>Se l’app si chiude in modo anomalo o incontra un errore, al successivo avvio un rapporto va al nostro server: dove è avvenuto l’errore, la versione, il dispositivo. Non contiene nulla di ciò che hai scritto. Anche Apple può condividere con gli sviluppatori i propri rapporti sugli arresti anomali, se lo consenti nelle impostazioni di iPhone.</p>
-
-<h3>Scrittura a mano</h3>
-<p>Una domanda scritta con il dito viene letta dal modello Claude (Anthropic): quando metti la domanda sotto il mazzo, il telefono invia al nostro server un disegno dei tratti — un’immagine semplice senza colore né sfondo — e il server la passa al modello insieme al controllo della domanda. Ciò che torna indietro è la riga così come è stata letta, e puoi correggerla. Il server non conserva il disegno e non lo scrive nei log né nell’analitica. I tratti in sé restano con la domanda, così la busta e il diario conservano la tua grafia.</p>
-
-<h3>Accedi con Apple</h3>
-<p>All’inizio il tuo account è anonimo. Se accedi con Apple, il server conserva l’identificativo fornito da Apple — è così che il tuo diario ti ritrova su un nuovo telefono. Il server non conserva il nome né l’e-mail che ricevi da Apple.</p>
-
-<h3>Abbonamento</h3>
-<p>Gli acquisti passano dall’App Store. Il server conosce lo stato del tuo abbonamento tramite RevenueCat, un servizio che verifica gli acquisti. L’app non vede mai i tuoi dati di pagamento.</p>
-
-<h2><span class="n">IV</span>Chi riceve i dati</h2>
-<ul>
-<li><b>Anthropic</b> — il testo della domanda (o il disegno della scrittura a mano, per poterla leggere), la stesa, le carte e la lingua, perché il modello Claude possa controllare la domanda e scrivere la lettura. Usiamo l’API, non un prodotto per consumatori. <span class="todo">TODO: conservazione delle richieste API da parte di Anthropic secondo il nostro accordo — da completare prima del lancio.</span></li>
-<li><b>Apple</b> — notifiche (APNs), meteo (WeatherKit), Accedi con Apple, acquisti.</li>
-<li><b>RevenueCat</b> — stato dell’abbonamento e identificativo del tuo account Tarocchi.</li>
-</ul>
-<p>Non vendiamo dati e non li passiamo a reti pubblicitarie. Nell’app non c’è pubblicità.</p>
-
-<h2><span class="n">V</span>Dove e come vengono conservati</h2>
-<p>I dati sono conservati sul nostro server in <span class="todo">TODO: paese dell’hosting (questione 14)</span>. Dischi e backup sono cifrati, le connessioni usano TLS e il database non è raggiungibile da internet <span class="todo">(TODO: confermare una volta scelto l’hosting)</span>. La copia del diario non è cifrata con una tua chiave personale: chi ottenesse accesso al database potrebbe leggere le domande. Per questo l’accesso al database e ai backup è chiuso a tutti tranne che al server e al titolare.</p>
-
-<h2><span class="n">VI</span>Per quanto tempo vengono conservati</h2>
-<ul>
-<li>Diario, domande e letture — finché non li elimini o non elimini l’account.</li>
-<li>Una domanda bruciata viene rimossa dal telefono e dal server subito e per sempre, scrittura a mano compresa. Scompare dai backup del database man mano che ruotano — entro 30 giorni.</li>
-<li>Eventi di analitica grezzi — 25 mesi, poi vengono eliminati. I numeri aggregati (per esempio, quante stese sono state fatte in un giorno) sono conservati a tempo indeterminato e non sono collegati a nessuno.</li>
-<li>La stampa della tua 79ª carta — sul server fino all’eliminazione dell’account.</li>
-<li>Rapporti sugli arresti anomali e token delle notifiche — i rapporti per 90 giorni; il token delle notifiche viene eliminato dopo 60 giorni di inattività.</li>
-<li>Indirizzo IP all’accesso — fino a un’ora, per prevenire abusi.</li>
-</ul>
-
-<h2><span class="n">VII</span>Che cosa puoi fare nell’app</h2>
-<ul>
-<li><b>Bruciare una domanda</b> — nel diario. Il testo e la scrittura a mano bruciano; la data e le carte restano.</li>
-<li><b>Eliminare il diario</b> — nelle Impostazioni.</li>
-<li><b>Eliminare l’account</b> — Impostazioni → Account → Elimina l’account. Viene cancellato tutto: i dati sul server, il collegamento al tuo ID Apple e agli acquisti in RevenueCat, il diario e le impostazioni su questo telefono. Gli eventi di analitica perdono il collegamento con te. Non si può annullare. Non esiste un’uscita senza eliminazione: l’account e il diario vivono insieme.</li>
-<li>Eliminare l’account non disdice l’abbonamento — lo si fa nelle impostazioni del tuo ID Apple.</li>
-<li>Per chiedere quali dati abbiamo su di te, o per chiederci di eliminarli, scrivi a <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</li>
-</ul>
-
-<h2><span class="n">VIII</span>Minori</h2>
-<p><span class="todo">TODO: classificazione per età e regola per i minori — dopo la decisione sulla questione 19.</span></p>
-
-<h2><span class="n">IX</span>Modifiche</h2>
-<p>Se questa informativa cambia, la nuova versione comparirà su questa pagina con una nuova data.</p>
+<h2><span class="n">III</span>Minori e modifiche</h2>
+<p><span class="todo">TODO: classificazione per età e regola per i minori — dopo la decisione sulla questione 19.</span> Se questa informativa cambia, la nuova versione comparirà su questa pagina con una nuova data. Contatto: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
 
 <p class="note">Il paese in base all’IP usa IP to Country Lite di <a href="https://db-ip.com">DB-IP</a>, con licenza CC BY 4.0.</p>
 </main>
