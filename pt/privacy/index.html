@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="referrer" content="no-referrer">
+<title>Política de Privacidade — Tarocchi</title>
+<meta name="description" content="Quais dados o Tarocchi coleta, para quê, quem os recebe e por quanto tempo são guardados.">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="../../pt/">Tarocchi</a>
+<nav class="pages" aria-label="Tarocchi"><a href="../../pt/privacy/" aria-current="page">Política de Privacidade</a><a href="../../pt/terms/">Termos de Uso</a><a href="../../pt/support/">Suporte</a></nav>
+<nav class="langs" aria-label="Idioma"><a href="../../ru/privacy/" hreflang="ru" lang="ru">RU</a><a href="../../en/privacy/" hreflang="en" lang="en">EN</a><a href="../../de/privacy/" hreflang="de" lang="de">DE</a><a href="../../es/privacy/" hreflang="es" lang="es">ES</a><a href="../../fr/privacy/" hreflang="fr" lang="fr">FR</a><a href="../../it/privacy/" hreflang="it" lang="it">IT</a><a href="../../pt/privacy/" hreflang="pt" lang="pt" aria-current="true">PT</a><a href="../../ja/privacy/" hreflang="ja" lang="ja">JA</a><a href="../../ko/privacy/" hreflang="ko" lang="ko">KO</a><a href="../../th/privacy/" hreflang="th" lang="th">TH</a><a href="../../tr/privacy/" hreflang="tr" lang="tr">TR</a></nav>
+</header>
+<main class="sheet">
+<p class="draft">Rascunho. Um advogado está revisando este texto (questão 19); até lá, ele não é definitivo.</p>
+<h1>Política de Privacidade</h1>
+<p class="updated">Atualização: TODO data de publicação</p>
+<p>O Tarocchi é um baralho de tarô no seu celular. As perguntas que você faz ao baralho são pessoais, por isso esta página diz com clareza o que o aplicativo sabe, onde isso fica guardado e quem pode ver.</p>
+
+<h2><span class="n">I</span>Em resumo</h2>
+<ul>
+<li>O texto da sua pergunta vai para o modelo Claude, da Anthropic, só para verificar a pergunta e escrever a leitura — sem o seu nome e sem as suas tiragens anteriores.</li>
+<li>A análise de uso é nossa: só o dono do aplicativo vê os eventos. Não há análise de terceiros nem anúncios, e nenhum dado é vendido.</li>
+<li>O seu endereço IP não é guardado para análise de uso — dele só se extrai o país. No login, o endereço é mantido por até uma hora para evitar abusos.</li>
+<li>Excluir a conta apaga tudo: os dados no servidor e o diário no celular.</li>
+</ul>
+
+<h2><span class="n">II</span>Quem é responsável pelos dados</h2>
+<p>O aplicativo Tarocchi e este site são mantidos por Ilya Manenkov, desenvolvedor independente. Contato: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
+
+<h2><span class="n">III</span>O que é coletado e onde fica</h2>
+<table class="data">
+<thead><tr><th>Dados</th><th>Onde ficam</th><th>Quem recebe</th></tr></thead>
+<tbody>
+<tr><td>Perguntas ao baralho — texto</td><td data-h="Onde">No celular e no nosso servidor</td><td data-h="Quem">Anthropic — quando a pergunta é verificada e a leitura é escrita</td></tr>
+<tr><td>Escrita à mão da pergunta</td><td data-h="Onde">No celular e no nosso servidor</td><td data-h="Quem">Anthropic — uma imagem dos traços, para ler a pergunta; o servidor não a guarda</td></tr>
+<tr><td>Leituras</td><td data-h="Onde">No celular e no nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Cartas tiradas e datas</td><td data-h="Onde">No celular e no nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Idioma, fuso horário, horário da carta do dia</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Token do dispositivo para notificações</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">Apple (serviço de notificações APNs)</td></tr>
+<tr><td>Identificador da Apple — se você entrar com a Apple</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Status da assinatura</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">RevenueCat e Apple</td></tr>
+<tr><td>Localização aproximada — só se o clima lá fora estiver ativado</td><td data-h="Onde">Não é guardada</td><td data-h="Quem">Apple (WeatherKit) — no momento da consulta do clima</td></tr>
+<tr><td>Eventos de análise de uso: telas, ações, dispositivo, país</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Relatórios de falhas — sem o conteúdo de perguntas ou leituras</td><td data-h="Onde">No nosso servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Endereço IP</td><td data-h="Onde">Não é guardado para análise de uso, só o código do país é mantido; no login — por até uma hora</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Foto para a 79ª carta</td><td data-h="Onde">Não é guardada: é processada no celular, e só a gravura pronta em duas cores vai para o servidor</td><td data-h="Quem">Ninguém</td></tr>
+<tr><td>Dados do sensor de movimento</td><td data-h="Onde">Não são guardados</td><td data-h="Quem">Ninguém</td></tr>
+</tbody>
+</table>
+
+<h3>Perguntas e leituras</h3>
+<p>A pergunta que você escreve ao baralho fica guardada no seu celular e em uma cópia no nosso servidor, para que o diário não se perca e possa passar para um celular novo. Para verificar a pergunta, sugerir uma tiragem e escrever a leitura, o servidor envia ao modelo Claude, da Anthropic, o mínimo: o texto da pergunta, a tiragem, as cartas e o idioma. Uma pergunta escrita com o dedo é antes lida pelo modelo a partir do desenho (veja “Escrita à mão”). Nenhum nome, nenhum identificador, nenhuma tiragem anterior. Não usamos as perguntas para treinar nada e nunca as mostramos a outras pessoas.</p>
+<p>O texto das perguntas e das leituras nunca vai para os registros do servidor, para as mensagens de erro ou para a análise de uso. Só o servidor e o dono do aplicativo têm acesso ao banco de dados.</p>
+
+<h3>Análise de uso</h3>
+<p>O aplicativo envia eventos ao nosso servidor: quais telas são abertas e quais ações são feitas (por exemplo, “tiragem iniciada”), a versão do aplicativo e do iOS, o modelo do celular, o idioma e a região do dispositivo, a loja da App Store e o país. O país é identificado a partir do endereço IP em uma base local DB-IP Lite; o endereço em si não é salvo. O texto de perguntas, leituras, anotações e buscas nunca vai para os eventos.</p>
+<p>A análise de uso nos ajuda a entender o que funciona no aplicativo e o que não funciona. Ela está sempre ativa; não há uma opção separada para desligá-la. Os eventos são vinculados à sua conta, mas não são usados para rastrear você em outros aplicativos e sites e não são compartilhados com ninguém — por isso o pedido de rastreamento da Apple não aparece.</p>
+
+<h3>Falhas</h3>
+<p>Se o aplicativo travar ou encontrar um erro, um relatório vai para o nosso servidor na próxima abertura: onde o erro aconteceu, a versão, o dispositivo. Ele não contém nada do que você escreveu. A Apple também pode compartilhar os próprios relatórios de falhas com os desenvolvedores, se você permitir isso nos Ajustes do iPhone.</p>
+
+<h3>Escrita à mão</h3>
+<p>Uma pergunta escrita com o dedo é lida pelo modelo Claude (Anthropic): quando você coloca a pergunta embaixo do baralho, o celular envia ao nosso servidor um desenho dos traços — uma imagem simples, sem cor e sem fundo — e o servidor a repassa ao modelo junto com a verificação da pergunta. O que volta é a linha lida, e você pode corrigi-la. O servidor não guarda o desenho e não o grava em registros nem na análise de uso. Os traços em si ficam com a pergunta, para que o envelope e o diário guardem a sua própria letra.</p>
+
+<h3>Iniciar sessão com a Apple</h3>
+<p>A sua conta começa anônima. Se você entrar com a Apple, o servidor guarda o identificador fornecido pela Apple — é assim que o seu diário encontra você em um celular novo. O servidor não guarda o seu nome nem o seu e-mail da Apple.</p>
+
+<h3>Assinatura</h3>
+<p>As compras são feitas pela App Store. O servidor fica sabendo do status da sua assinatura pela RevenueCat, um serviço que verifica compras. O aplicativo nunca vê os seus dados de pagamento.</p>
+
+<h2><span class="n">IV</span>Quem recebe dados</h2>
+<ul>
+<li><b>Anthropic</b> — o texto da pergunta (ou o desenho da escrita à mão, para que possa ser lido), a tiragem, as cartas e o idioma, para que o modelo Claude possa verificar a pergunta e escrever a leitura. Usamos a API, não um produto para o consumidor. <span class="todo">TODO: retenção das solicitações à API pela Anthropic conforme o nosso contrato — preencher antes do lançamento.</span></li>
+<li><b>Apple</b> — notificações (APNs), clima (WeatherKit), Iniciar sessão com a Apple, compras.</li>
+<li><b>RevenueCat</b> — status da assinatura e o identificador da sua conta Tarocchi.</li>
+</ul>
+<p>Não vendemos dados e não os repassamos a redes de anúncios. Não há anúncios no aplicativo.</p>
+
+<h2><span class="n">V</span>Onde e como os dados são guardados</h2>
+<p>Os dados ficam no nosso servidor em <span class="todo">TODO: país da hospedagem (questão 14)</span>. Os discos e os backups são criptografados, as conexões usam TLS e o banco de dados não pode ser acessado pela internet <span class="todo">(TODO: confirmar quando a hospedagem for escolhida)</span>. A cópia do diário não é criptografada com uma chave pessoal sua: quem conseguisse acesso ao banco de dados poderia ler as perguntas. Por isso o acesso ao banco de dados e aos backups é fechado para todos, exceto o servidor e o dono.</p>
+
+<h2><span class="n">VI</span>Por quanto tempo os dados são guardados</h2>
+<ul>
+<li>Diário, perguntas e leituras — até você excluí-los ou excluir a sua conta.</li>
+<li>Uma pergunta queimada é removida do celular e do servidor imediatamente e para sempre, inclusive a escrita à mão. Ela desaparece dos backups do banco de dados conforme eles são substituídos — em até 30 dias.</li>
+<li>Eventos brutos de análise de uso — 25 meses, depois são excluídos. Números agregados (por exemplo, quantas tiragens foram feitas em um dia) são guardados por tempo indeterminado e não são vinculados a ninguém.</li>
+<li>A gravura da sua 79ª carta — no servidor até a exclusão da conta.</li>
+<li>Relatórios de falhas e o token de notificações — relatórios de falhas por 90 dias; o token de notificações é excluído após 60 dias sem atividade.</li>
+<li>Endereço IP no login — por até uma hora, para evitar abusos.</li>
+</ul>
+
+<h2><span class="n">VII</span>O que você pode fazer no aplicativo</h2>
+<ul>
+<li><b>Queimar uma pergunta</b> — no diário. O texto e a escrita à mão queimam; a data e as cartas ficam.</li>
+<li><b>Excluir o diário</b> — nas Configurações.</li>
+<li><b>Excluir a sua conta</b> — Configurações → Conta → Excluir conta. Tudo é apagado: os dados no servidor, o vínculo com o seu Apple ID e com as compras na RevenueCat, o diário e os ajustes neste celular. Os eventos de análise de uso perdem o vínculo com você. Isso não pode ser desfeito. Não existe sair da conta sem excluí-la: a conta e o diário vivem juntos.</li>
+<li>Excluir a conta não cancela uma assinatura — isso é feito nos ajustes do seu Apple ID.</li>
+<li>Para perguntar quais dados temos sobre você, ou para nos pedir que os excluamos, escreva para <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</li>
+</ul>
+
+<h2><span class="n">VIII</span>Crianças</h2>
+<p><span class="todo">TODO: classificação etária e a regra para crianças — depois que a questão 19 for resolvida.</span></p>
+
+<h2><span class="n">IX</span>Alterações</h2>
+<p>Se esta política mudar, a nova versão aparecerá nesta página com uma nova data.</p>
+
+<p class="note">O país pelo IP usa o IP to Country Lite da <a href="https://db-ip.com">DB-IP</a>, sob a licença CC BY 4.0.</p>
+</main>
+<footer class="foot"><p>Tarocchi é para entretenimento e reflexão. As cartas não preveem o futuro.</p></footer>
+</body>
+</html>

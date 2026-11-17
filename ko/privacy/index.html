@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="referrer" content="no-referrer">
+<title>개인정보 처리방침 — Tarocchi</title>
+<meta name="description" content="Tarocchi가 어떤 데이터를 왜 모으는지, 누가 받는지, 얼마나 오래 보관하는지.">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="../../ko/">Tarocchi</a>
+<nav class="pages" aria-label="Tarocchi"><a href="../../ko/privacy/" aria-current="page">개인정보 처리방침</a><a href="../../ko/terms/">이용약관</a><a href="../../ko/support/">지원</a></nav>
+<nav class="langs" aria-label="언어"><a href="../../ru/privacy/" hreflang="ru" lang="ru">RU</a><a href="../../en/privacy/" hreflang="en" lang="en">EN</a><a href="../../de/privacy/" hreflang="de" lang="de">DE</a><a href="../../es/privacy/" hreflang="es" lang="es">ES</a><a href="../../fr/privacy/" hreflang="fr" lang="fr">FR</a><a href="../../it/privacy/" hreflang="it" lang="it">IT</a><a href="../../pt/privacy/" hreflang="pt" lang="pt">PT</a><a href="../../ja/privacy/" hreflang="ja" lang="ja">JA</a><a href="../../ko/privacy/" hreflang="ko" lang="ko" aria-current="true">KO</a><a href="../../th/privacy/" hreflang="th" lang="th">TH</a><a href="../../tr/privacy/" hreflang="tr" lang="tr">TR</a></nav>
+</header>
+<main class="sheet">
+<p class="draft">초안이에요. 변호사가 이 글을 검토하고 있으며(질문 19), 그전까지는 확정본이 아니에요.</p>
+<h1>개인정보 처리방침</h1>
+<p class="updated">업데이트: TODO publication date</p>
+<p>Tarocchi는 휴대폰 속 타로 덱이에요. 덱에 묻는 질문은 개인적인 것이라서, 이 페이지에서는 앱이 무엇을 알고, 그것이 어디에 있으며, 누가 볼 수 있는지를 솔직하게 알려 드려요.</p>
+
+<h2><span class="n">I</span>요약</h2>
+<ul>
+<li>질문 텍스트는 질문을 확인하고 해석을 쓰기 위해서만 Anthropic의 Claude 모델로 보내져요. 이름도, 지난 스프레드도 함께 가지 않아요.</li>
+<li>분석은 자체 분석이에요. 이벤트는 앱 운영자만 볼 수 있어요. 외부 분석 도구나 광고는 없고, 데이터를 팔지 않아요.</li>
+<li>IP 주소는 분석용으로 저장하지 않고, 거기서 국가만 알아내요. 로그인할 때는 남용을 막기 위해 최대 한 시간 동안 주소를 보관해요.</li>
+<li>계정을 삭제하면 모든 것이 지워져요. 서버의 데이터도, 휴대폰의 일기도요.</li>
+</ul>
+
+<h2><span class="n">II</span>데이터에 대한 책임자</h2>
+<p>Tarocchi 앱과 이 사이트는 독립 개발자 Ilya Manenkov가 운영해요. 연락처: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
+
+<h2><span class="n">III</span>무엇을 모으고 어디에 두는지</h2>
+<table class="data">
+<thead><tr><th>데이터</th><th>보관 위치</th><th>받는 곳</th></tr></thead>
+<tbody>
+<tr><td>덱에 묻는 질문 — 텍스트</td><td data-h="보관 위치">휴대폰과 우리 서버</td><td data-h="받는 곳">Anthropic — 질문을 확인하고 해석을 쓸 때</td></tr>
+<tr><td>질문의 손글씨</td><td data-h="보관 위치">휴대폰과 우리 서버</td><td data-h="받는 곳">Anthropic — 질문을 읽기 위한 획의 이미지. 서버는 이 이미지를 보관하지 않아요</td></tr>
+<tr><td>해석</td><td data-h="보관 위치">휴대폰과 우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>뽑은 카드와 날짜</td><td data-h="보관 위치">휴대폰과 우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>언어, 시간대, 오늘의 카드 시간</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>알림용 기기 토큰</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">Apple(APNs 알림 서비스)</td></tr>
+<tr><td>Apple 식별자 — Apple로 로그인한 경우</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>구독 상태</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">RevenueCat과 Apple</td></tr>
+<tr><td>대략적인 위치 — 창밖 날씨를 켠 경우에만</td><td data-h="보관 위치">저장하지 않음</td><td data-h="받는 곳">Apple(WeatherKit) — 날씨를 요청하는 순간</td></tr>
+<tr><td>분석 이벤트: 화면, 동작, 기기, 국가</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>오류 보고 — 질문이나 해석 내용 없이</td><td data-h="보관 위치">우리 서버</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>IP 주소</td><td data-h="보관 위치">분석용으로는 저장하지 않고 국가 코드만 남겨요. 로그인할 때는 최대 한 시간</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>79번째 카드용 사진</td><td data-h="보관 위치">저장하지 않음: 휴대폰에서 처리되고, 완성된 두 가지 색 인쇄본만 서버로 가요</td><td data-h="받는 곳">없음</td></tr>
+<tr><td>동작 센서 데이터</td><td data-h="보관 위치">저장하지 않음</td><td data-h="받는 곳">없음</td></tr>
+</tbody>
+</table>
+
+<h3>질문과 해석</h3>
+<p>덱에 쓴 질문은 휴대폰에, 그리고 사본으로 우리 서버에 저장돼요. 일기가 사라지지 않고 새 휴대폰으로 옮겨 갈 수 있도록요. 질문을 확인하고, 스프레드를 추천하고, 해석을 쓰기 위해 서버는 Anthropic의 Claude 모델에 꼭 필요한 것만 보내요. 질문 텍스트, 스프레드, 카드, 언어예요. 손가락으로 쓴 질문은 먼저 모델이 그 그림을 보고 읽어요(“손글씨” 참고). 이름도, 식별자도, 지난 스프레드도 보내지 않아요. 질문을 무언가를 학습시키는 데 쓰지 않고, 다른 사람에게 보여 주지도 않아요.</p>
+<p>질문과 해석의 텍스트는 서버 로그, 오류 메시지, 분석 어디에도 들어가지 않아요. 데이터베이스에는 서버와 앱 운영자만 접근할 수 있어요.</p>
+
+<h3>분석</h3>
+<p>앱은 우리 서버로 이벤트를 보내요. 어떤 화면을 열고 어떤 동작을 했는지(예: “스프레드 시작”), 앱과 iOS 버전, 휴대폰 모델, 기기 언어와 지역, App Store 스토어프런트와 국가예요. 국가는 IP 주소로 로컬 DB-IP Lite 데이터베이스에서 찾고, 주소 자체는 저장하지 않아요. 질문, 해석, 메모, 검색의 텍스트는 이벤트에 절대 들어가지 않아요.</p>
+<p>분석은 앱에서 무엇이 잘 되고 무엇이 안 되는지 이해하는 데 도움이 돼요. 분석은 늘 켜져 있고, 따로 끄는 스위치는 없어요. 이벤트는 계정과 연결되지만, 다른 앱과 웹사이트를 오가며 추적하는 데 쓰이지 않고 누구와도 공유되지 않아요. 그래서 Apple의 추적 허용 요청 창이 나타나지 않아요.</p>
+
+<h3>오류</h3>
+<p>앱이 멈추거나 오류가 나면, 다음 실행 때 보고서가 우리 서버로 가요. 오류가 난 곳, 버전, 기기 정보예요. 직접 쓴 내용은 하나도 들어 있지 않아요. iPhone 설정에서 허용했다면 Apple도 자체 오류 보고서를 개발자와 공유할 수 있어요.</p>
+
+<h3>손글씨</h3>
+<p>손가락으로 쓴 질문은 Claude 모델(Anthropic)이 읽어요. 질문을 덱 아래에 놓으면, 휴대폰은 획을 그린 그림을 우리 서버로 보내요. 색도 배경도 없는 단순한 이미지예요. 서버는 질문 확인과 함께 그 그림을 모델에 전달해요. 돌아오는 것은 읽어 낸 한 줄이고, 직접 고칠 수 있어요. 서버는 그림을 보관하지 않으며 로그나 분석에도 남기지 않아요. 획 자체는 질문과 함께 남아서, 봉투와 일기에는 직접 쓴 손글씨가 그대로 있어요.</p>
+
+<h3>Apple로 로그인</h3>
+<p>계정은 처음에 익명으로 시작돼요. Apple로 로그인하면 서버는 Apple이 제공하는 식별자를 저장해요. 그래야 새 휴대폰에서도 일기를 찾을 수 있어요. 서버는 Apple에서 받은 이름이나 이메일을 보관하지 않아요.</p>
+
+<h3>구독</h3>
+<p>구매는 App Store를 통해 이뤄져요. 서버는 구매를 확인하는 서비스인 RevenueCat에서 구독 상태를 알아내요. 앱은 결제 정보를 전혀 보지 않아요.</p>
+
+<h2><span class="n">IV</span>데이터를 받는 곳</h2>
+<ul>
+<li><b>Anthropic</b> — Claude 모델이 질문을 확인하고 해석을 쓸 수 있도록 질문 텍스트(또는 읽어 낼 손글씨 그림), 스프레드, 카드, 언어를 받아요. 우리는 소비자용 제품이 아니라 API를 사용해요. <span class="todo">TODO: 계약상 Anthropic의 API 요청 보관 기간 — 출시 전에 채울 것.</span></li>
+<li><b>Apple</b> — 알림(APNs), 날씨(WeatherKit), Apple로 로그인, 구매.</li>
+<li><b>RevenueCat</b> — 구독 상태와 Tarocchi 계정 식별자.</li>
+</ul>
+<p>데이터를 팔지 않고 광고 네트워크에 넘기지도 않아요. 앱에는 광고가 없어요.</p>
+
+<h2><span class="n">V</span>어디에 어떻게 보관하는지</h2>
+<p>데이터는 <span class="todo">TODO: 호스팅 국가(질문 14)</span>에 있는 우리 서버에 보관돼요. 디스크와 백업은 암호화되고, 연결에는 TLS를 쓰며, 데이터베이스는 인터넷에서 접근할 수 없어요<span class="todo">(TODO: 호스팅이 정해지면 확인)</span>. 일기 사본은 개인 키로 따로 암호화되어 있지 않아요. 데이터베이스에 접근한 누군가는 질문을 읽을 수 있어요. 그래서 데이터베이스와 백업에는 서버와 운영자 말고는 아무도 접근할 수 없게 막아 두었어요.</p>
+
+<h2><span class="n">VI</span>얼마나 오래 보관하는지</h2>
+<ul>
+<li>일기, 질문, 해석 — 직접 삭제하거나 계정을 삭제할 때까지.</li>
+<li>태운 질문은 손글씨를 포함해 휴대폰과 서버에서 즉시, 영구히 지워져요. 데이터베이스 백업에서는 백업이 교체되면서 30일 안에 사라져요.</li>
+<li>원본 분석 이벤트 — 25개월 뒤 삭제돼요. 집계된 숫자(예: 하루에 스프레드가 몇 번 있었는지)는 기한 없이 보관되며 누구와도 연결되지 않아요.</li>
+<li>79번째 카드의 인쇄본 — 계정을 삭제할 때까지 서버에.</li>
+<li>오류 보고와 알림 토큰 — 오류 보고는 90일, 알림 토큰은 60일 동안 활동이 없으면 삭제돼요.</li>
+<li>로그인 시 IP 주소 — 남용을 막기 위해 최대 한 시간.</li>
+</ul>
+
+<h2><span class="n">VII</span>앱에서 할 수 있는 것</h2>
+<ul>
+<li><b>질문 태우기</b> — 일기에서. 텍스트와 손글씨는 타 버리고, 날짜와 카드는 남아요.</li>
+<li><b>일기 삭제</b> — 설정에서.</li>
+<li><b>계정 삭제</b> — 설정 → 계정 → 계정 삭제. 서버의 데이터, Apple ID 및 RevenueCat 구매와의 연결, 이 휴대폰의 일기와 설정까지 모두 지워져요. 분석 이벤트는 계정과의 연결을 잃어요. 되돌릴 수 없어요. 삭제하지 않고 로그아웃하는 방법은 없어요. 계정과 일기는 함께 있어요.</li>
+<li>계정을 삭제해도 구독은 해지되지 않아요. 구독 해지는 Apple ID 설정에서 해요.</li>
+<li>우리가 어떤 데이터를 가지고 있는지 묻거나 삭제를 요청하려면 <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>으로 메일을 보내 주세요.</li>
+</ul>
+
+<h2><span class="n">VIII</span>어린이</h2>
+<p><span class="todo">TODO: 연령 등급과 어린이 관련 규칙 — 질문 19가 정해진 뒤에.</span></p>
+
+<h2><span class="n">IX</span>변경</h2>
+<p>이 방침이 바뀌면, 새 버전이 새 날짜와 함께 이 페이지에 올라와요.</p>
+
+<p class="note">IP 기반 국가 확인에는 <a href="https://db-ip.com">DB-IP</a>의 IP to Country Lite를 사용하며, CC BY 4.0 라이선스를 따라요.</p>
+</main>
+<footer class="foot"><p>Tarocchi는 재미와 성찰을 위한 앱이에요. 카드는 미래를 예언하지 않아요.</p></footer>
+</body>
+</html>

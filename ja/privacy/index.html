@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="referrer" content="no-referrer">
+<title>プライバシーポリシー — Tarocchi</title>
+<meta name="description" content="Tarocchi が集めるデータ、その目的、受け取る相手、保存期間について。">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="../../ja/">Tarocchi</a>
+<nav class="pages" aria-label="Tarocchi"><a href="../../ja/privacy/" aria-current="page">プライバシーポリシー</a><a href="../../ja/terms/">利用規約</a><a href="../../ja/support/">サポート</a></nav>
+<nav class="langs" aria-label="言語"><a href="../../ru/privacy/" hreflang="ru" lang="ru">RU</a><a href="../../en/privacy/" hreflang="en" lang="en">EN</a><a href="../../de/privacy/" hreflang="de" lang="de">DE</a><a href="../../es/privacy/" hreflang="es" lang="es">ES</a><a href="../../fr/privacy/" hreflang="fr" lang="fr">FR</a><a href="../../it/privacy/" hreflang="it" lang="it">IT</a><a href="../../pt/privacy/" hreflang="pt" lang="pt">PT</a><a href="../../ja/privacy/" hreflang="ja" lang="ja" aria-current="true">JA</a><a href="../../ko/privacy/" hreflang="ko" lang="ko">KO</a><a href="../../th/privacy/" hreflang="th" lang="th">TH</a><a href="../../tr/privacy/" hreflang="tr" lang="tr">TR</a></nav>
+</header>
+<main class="sheet">
+<p class="draft">草案です。この文章は弁護士が確認中で（質問19）、それまでは確定版ではありません。</p>
+<h1>プライバシーポリシー</h1>
+<p class="updated">更新日: TODO publication date</p>
+<p>Tarocchi は、iPhone の中のタロットデッキです。デッキに尋ねる問いは個人的なものなので、このページでは、アプリが何を知っていて、それがどこにあり、誰が見られるのかをはっきりお伝えします。</p>
+
+<h2><span class="n">I</span>要点</h2>
+<ul>
+<li>問いの文面は、問いの確認とリーディングの作成のためだけに Anthropic のモデル Claude に送られます。名前や過去の展開は含まれません。</li>
+<li>アナリティクスは自前のものです。イベントを見られるのはアプリの運営者だけです。外部のアナリティクスや広告はなく、データを販売することもありません。</li>
+<li>IP アドレスはアナリティクスのためには保存されず、そこから国だけを取り出します。サインインのときは、不正利用を防ぐために最大1時間アドレスを保持します。</li>
+<li>アカウントを削除すると、サーバー上のデータも iPhone の日記も、すべてが消去されます。</li>
+</ul>
+
+<h2><span class="n">II</span>データの責任者</h2>
+<p>Tarocchi アプリとこのサイトは、個人開発者 Ilya Manenkov が運営しています。連絡先：<a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>。</p>
+
+<h2><span class="n">III</span>集めるデータと保存場所</h2>
+<table class="data">
+<thead><tr><th>データ</th><th>保存場所</th><th>受け取る相手</th></tr></thead>
+<tbody>
+<tr><td>デッキへの問い — 文面</td><td data-h="保存場所">iPhone と私たちのサーバー</td><td data-h="受け取る相手">Anthropic — 問いの確認とリーディングの作成のとき</td></tr>
+<tr><td>手書きの問い</td><td data-h="保存場所">iPhone と私たちのサーバー</td><td data-h="受け取る相手">Anthropic — 問いを読むための線の画像。サーバーには保存されません</td></tr>
+<tr><td>リーディング</td><td data-h="保存場所">iPhone と私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>引いたカードと日付</td><td data-h="保存場所">iPhone と私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>言語、タイムゾーン、今日のカードの時刻</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>通知用のデバイストークン</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">Apple（通知サービス APNs）</td></tr>
+<tr><td>Apple の識別子 — Apple でサインインした場合</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>サブスクリプションの状態</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">RevenueCat と Apple</td></tr>
+<tr><td>おおよその位置情報 — 窓の外の天気をオンにしている場合のみ</td><td data-h="保存場所">保存されません</td><td data-h="受け取る相手">Apple（WeatherKit）— 天気を問い合わせる時点で</td></tr>
+<tr><td>アナリティクスのイベント：画面、操作、デバイス、国</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>クラッシュレポート — 問いやリーディングの内容は含みません</td><td data-h="保存場所">私たちのサーバー</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>IP アドレス</td><td data-h="保存場所">アナリティクスのためには保存せず、国コードだけを残します。サインインのときは最大1時間</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>79枚目のカードのための写真</td><td data-h="保存場所">保存されません。iPhone の中で処理され、仕上がった二色刷りだけがサーバーに送られます</td><td data-h="受け取る相手">なし</td></tr>
+<tr><td>モーションセンサーのデータ</td><td data-h="保存場所">保存されません</td><td data-h="受け取る相手">なし</td></tr>
+</tbody>
+</table>
+
+<h3>問いとリーディング</h3>
+<p>デッキに書いた問いは、iPhone と、私たちのサーバー上のコピーに保存されます。日記がなくならず、新しい iPhone にも移せるようにするためです。問いを確認し、並べ方を提案し、リーディングを書くために、サーバーは Anthropic のモデル Claude に必要最小限のもの、つまり問いの文面、展開、カード、言語を送ります。指で書いた問いは、まずモデルがその線の画像から読み取ります（「手書き」を参照）。名前も、識別子も、過去の展開も送りません。問いを何かの学習に使うことはなく、ほかの人に見せることもありません。</p>
+<p>問いとリーディングの文面が、サーバーのログ、エラーメッセージ、アナリティクスに入ることはありません。データベースにアクセスできるのは、サーバーとアプリの運営者だけです。</p>
+
+<h3>アナリティクス</h3>
+<p>アプリは私たちのサーバーにイベントを送ります。どの画面が開かれ、どんな操作が行われたか（たとえば「展開を始めた」）、アプリと iOS のバージョン、iPhone の機種、端末の言語と地域、App Store のストアフロントと国です。国は IP アドレスから、ローカルの DB-IP Lite データベースで割り出します。アドレスそのものは保存しません。問い、リーディング、メモ、検索の文面がイベントに入ることはありません。</p>
+<p>アナリティクスは、アプリの何がうまくいき、何がうまくいっていないかを知るために役立ちます。常にオンで、個別のスイッチはありません。イベントはアカウントに結びついていますが、ほかのアプリやウェブサイトをまたいで利用者を追跡するためには使われず、誰とも共有されません。そのため、Apple のトラッキングの確認は表示されません。</p>
+
+<h3>クラッシュ</h3>
+<p>アプリがクラッシュしたりエラーが起きたりすると、次に起動したときにレポートが私たちのサーバーに送られます。エラーが起きた場所、バージョン、デバイスです。利用者が書いたものは何も含まれません。iPhone の設定で許可している場合は、Apple が独自のクラッシュレポートを開発者と共有することもあります。</p>
+
+<h3>手書き</h3>
+<p>指で書いた問いは、モデル Claude（Anthropic）が読み取ります。問いをデッキの下に置くと、iPhone は線の画像（色も背景もないシンプルな画像）を私たちのサーバーに送り、サーバーはそれを問いの確認とあわせてモデルに渡します。返ってくるのは読み取られた一行で、利用者が直すこともできます。サーバーはこの画像を保存せず、ログやアナリティクスにも書きません。線そのものは問いと一緒に残るので、封筒と日記にはご自身の筆跡がそのまま残ります。</p>
+
+<h3>Apple でサインイン</h3>
+<p>アカウントは最初は匿名です。Apple でサインインすると、サーバーは Apple が提供する識別子を保存します。それによって、新しい iPhone でも日記が見つかります。Apple から受け取る名前やメールアドレスは、サーバーには保存しません。</p>
+
+<h3>サブスクリプション</h3>
+<p>購入は App Store を通じて行われます。サーバーは、購入を確認するサービス RevenueCat からサブスクリプションの状態を受け取ります。アプリが支払い情報を目にすることはありません。</p>
+
+<h2><span class="n">IV</span>データを受け取る相手</h2>
+<ul>
+<li><b>Anthropic</b> — 問いの文面（または読み取りのための手書きの画像）、展開、カード、言語。モデル Claude が問いを確認し、リーディングを書くためです。私たちは一般向けの製品ではなく API を使っています。<span class="todo">TODO：私たちの契約における Anthropic の API リクエストの保存期間 — 公開前に記入。</span></li>
+<li><b>Apple</b> — 通知（APNs）、天気（WeatherKit）、Apple でサインイン、購入。</li>
+<li><b>RevenueCat</b> — サブスクリプションの状態と、Tarocchi のアカウント識別子。</li>
+</ul>
+<p>データを販売することも、広告ネットワークに渡すこともありません。アプリに広告はありません。</p>
+
+<h2><span class="n">V</span>保存の場所と方法</h2>
+<p>データは<span class="todo">TODO：ホスティングの国（質問14）</span>にある私たちのサーバーに保存されます。ディスクとバックアップは暗号化され、通信には TLS を使い、データベースはインターネットから接続できません<span class="todo">（TODO：ホスティングが決まったら確認）</span>。日記のコピーは、利用者個人の鍵では暗号化されていません。データベースにアクセスできた人は、問いを読めてしまいます。そのため、データベースとバックアップへのアクセスは、サーバーと運営者以外のすべての人に対して閉じられています。</p>
+
+<h2><span class="n">VI</span>保存期間</h2>
+<ul>
+<li>日記、問い、リーディング — 利用者が削除するか、アカウントを削除するまで。</li>
+<li>燃やした問いは、手書きも含めて、iPhone とサーバーからただちに完全に削除されます。データベースのバックアップからは、バックアップが入れ替わるにつれて、30日以内に消えます。</li>
+<li>アナリティクスの生のイベント — 25か月、その後に削除。集計した数値（たとえば1日に何回展開が行われたか）は期限なく保存されますが、誰にも結びついていません。</li>
+<li>79枚目のカードの刷り — アカウントを削除するまでサーバーに保存。</li>
+<li>クラッシュレポートと通知用トークン — クラッシュレポートは90日間。通知用トークンは、60日間使われなければ削除されます。</li>
+<li>サインインのときの IP アドレス — 不正利用を防ぐため、最大1時間。</li>
+</ul>
+
+<h2><span class="n">VII</span>アプリの中でできること</h2>
+<ul>
+<li><b>問いを燃やす</b> — 日記から。文面と手書きが燃え、日付とカードは残ります。</li>
+<li><b>日記を削除する</b> — 「設定」から。</li>
+<li><b>アカウントを削除する</b> — 「設定」→「アカウント」→「アカウントを削除」。サーバー上のデータ、Apple ID と RevenueCat の購入との結びつき、この iPhone の日記と設定、そのすべてが消去されます。アナリティクスのイベントは利用者との結びつきを失います。これは取り消せません。削除せずにサインアウトする方法はありません。アカウントと日記はひとつのものとして存在しています。</li>
+<li>アカウントを削除しても、サブスクリプションは解約されません。解約は Apple ID の設定で行います。</li>
+<li>私たちが保有しているご自身のデータについて問い合わせたいときや、その削除を求めたいときは、<a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a> までご連絡ください。</li>
+</ul>
+
+<h2><span class="n">VIII</span>お子さまについて</h2>
+<p><span class="todo">TODO：年齢区分と、お子さまについての取り扱い — 質問19の決定後に記載。</span></p>
+
+<h2><span class="n">IX</span>変更</h2>
+<p>このポリシーが変わる場合は、新しい版が新しい日付とともにこのページに掲載されます。</p>
+
+<p class="note">IP アドレスからの国の判定には、<a href="https://db-ip.com">DB-IP</a> の IP to Country Lite を CC BY 4.0 ライセンスのもとで使用しています。</p>
+</main>
+<footer class="foot"><p>Tarocchi は楽しみと内省のためのものです。カードは未来を予言しません。</p></footer>
+</body>
+</html>

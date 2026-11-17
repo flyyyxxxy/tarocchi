@@ -1,0 +1,217 @@
+/* Tarocchi site — the table: chalk on baize, ink on paper (docs/design/design-system.md).
+   One lamp on the left; the only gradient is its fall-off under the felt. No glow,
+   no pills, no glass, nothing centred except nothing. Cinnabar lives only on paper. */
+
+@font-face {
+  font-family: "Prata";
+  src: url("Prata-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --baize: #1B2A25;
+  --baize-shadow: #121C19;
+  --lamp: rgba(160, 160, 104, .38);
+  --chalk: rgba(237, 228, 208, .78);
+  --chalk-strong: #EDE4D0;
+  --paper: #EDE4D0;
+  --ink: #1A1714;
+  --graphite: #6A6353;
+  --cinnabar: #B23A24;
+  --rule: rgba(26, 23, 20, .22);
+  --felt-opacity: .4;
+  /* Literata is ~1 MB without subsetting; the body uses the system serif
+     (New York on iPhone). Prata is the display face, self-hosted. */
+  --display: "Prata", ui-serif, Georgia, serif;
+  --text: ui-serif, "New York", Georgia, "Times New Roman", serif;
+}
+
+/* Day table: the same table by the window — grey baize, pencil instead of chalk. */
+@media (prefers-color-scheme: light) {
+  :root {
+    --baize: #C9C5B8;
+    --baize-shadow: #B4B0A2;
+    --lamp: rgba(255, 255, 250, .35);
+    --chalk: #33302A;
+    --chalk-strong: #33302A;
+    --paper: #F4EEDD;
+    --felt-opacity: .25;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--baize-shadow);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--chalk-strong);
+  font: 400 17px/1.6 var(--text);
+  background:
+    radial-gradient(120% 90% at -10% 38%, var(--lamp) 0%, transparent 70%),
+    var(--baize);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("felt.png") 0 0 / 192px 192px;
+  opacity: var(--felt-opacity);
+  pointer-events: none;
+}
+
+body > * { position: relative; }
+
+/* ---------- on the baize: chalk */
+
+.top {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 24px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 24px;
+}
+
+.brand {
+  font: 400 26px/32px var(--display);
+  color: var(--chalk-strong);
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.pages, .langs { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+
+.top nav a {
+  color: var(--chalk);
+  font-size: 15px;
+  line-height: 44px;           /* 44 pt touch target */
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.top nav a[aria-current] {
+  color: var(--chalk-strong);
+  text-decoration-thickness: 2px;
+}
+
+.langs a { letter-spacing: .12em; font-size: 13px; }
+
+.foot {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 8px 24px 40px;
+  color: var(--chalk);
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* ---------- the sheet: ink on paper, lying on the table (shadow to the right) */
+
+.sheet {
+  max-width: 712px;
+  margin: 16px auto 24px;
+  padding: 40px 48px 48px;
+  color: var(--ink);
+  background: url("paper.png") 0 0 / 160px 160px, var(--paper);
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px rgba(3, 6, 5, .5), 8px 10px 18px rgba(3, 6, 5, .42);
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-color-scheme: light) {
+  .sheet { box-shadow: -2px 2px 3px rgba(40, 38, 30, .25), -10px 12px 24px rgba(40, 38, 30, .18); }
+}
+
+.sheet h1 {
+  margin: 0;
+  font: 400 34px/40px var(--display);
+}
+
+.sheet h2 {
+  margin: 36px 0 8px;
+  font: 400 24px/30px var(--display);
+}
+
+.sheet h3 {
+  margin: 24px 0 4px;
+  font: 600 17px/1.45 var(--text);
+}
+
+.sheet p, .sheet ul, .sheet ol, .sheet dl { margin: 10px 0; }
+.sheet ul, .sheet ol { padding-left: 1.3em; }
+.sheet li { margin: 4px 0; }
+.sheet li::marker { color: var(--graphite); }
+
+.sheet a { color: var(--ink); text-underline-offset: 3px; }
+
+/* Rubric numbers — the one place cinnabar shows: on lit paper only. */
+.sheet h2 .n {
+  color: var(--cinnabar);
+  margin-right: .4em;
+}
+
+.updated, .sheet .note {
+  color: var(--graphite);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.updated { margin-top: 6px; }
+
+.draft {
+  margin: 0 0 20px;
+  padding: 10px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--graphite);
+  font-style: italic;
+  font-size: 15px;
+}
+
+.todo {
+  background: rgba(178, 58, 36, .12);
+  border-bottom: 1px dashed var(--cinnabar);
+}
+
+/* Data table — rules only, no boxes in boxes. */
+.data { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; line-height: 1.45; }
+.data th, .data td { text-align: left; vertical-align: top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); }
+.data th { font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--graphite); }
+
+/* FAQ: the question is a heading, the answer follows; nothing collapses. */
+.faq h3 { margin-top: 28px; }
+
+.index { list-style: none; padding: 0; }
+.index li { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.index a { font: 400 20px/24px var(--display); }
+
+/* ---------- phones */
+
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .top { padding: 18px 16px 4px; gap: 0 16px; }
+  .pages { width: 100%; order: 3; gap: 0 16px; }
+  .sheet { margin: 8px 8px 20px; padding: 28px 20px 32px; }
+  .sheet h1 { font-size: 28px; line-height: 34px; }
+  .sheet h2 { font-size: 21px; line-height: 27px; margin-top: 30px; }
+  .foot { padding: 4px 16px 32px; }
+  /* The data table becomes a list of rows. */
+  .data thead { display: none; }
+  .data, .data tbody, .data tr, .data td { display: block; width: 100%; }
+  .data tr { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .data td { border: 0; padding: 2px 0; }
+  .data td:first-child { font-weight: 600; }
+  .data td[data-h]::before { content: attr(data-h) " · "; color: var(--graphite); font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto; }
+}

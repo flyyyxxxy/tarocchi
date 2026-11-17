@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="referrer" content="no-referrer">
+<title>Gizlilik Politikası — Tarocchi</title>
+<meta name="description" content="Tarocchi hangi verileri topluyor, neden, kimler alıyor ve ne kadar saklanıyor.">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="../../tr/">Tarocchi</a>
+<nav class="pages" aria-label="Tarocchi"><a href="../../tr/privacy/" aria-current="page">Gizlilik Politikası</a><a href="../../tr/terms/">Kullanım Koşulları</a><a href="../../tr/support/">Destek</a></nav>
+<nav class="langs" aria-label="Dil"><a href="../../ru/privacy/" hreflang="ru" lang="ru">RU</a><a href="../../en/privacy/" hreflang="en" lang="en">EN</a><a href="../../de/privacy/" hreflang="de" lang="de">DE</a><a href="../../es/privacy/" hreflang="es" lang="es">ES</a><a href="../../fr/privacy/" hreflang="fr" lang="fr">FR</a><a href="../../it/privacy/" hreflang="it" lang="it">IT</a><a href="../../pt/privacy/" hreflang="pt" lang="pt">PT</a><a href="../../ja/privacy/" hreflang="ja" lang="ja">JA</a><a href="../../ko/privacy/" hreflang="ko" lang="ko">KO</a><a href="../../th/privacy/" hreflang="th" lang="th">TH</a><a href="../../tr/privacy/" hreflang="tr" lang="tr" aria-current="true">TR</a></nav>
+</header>
+<main class="sheet">
+<p class="draft">Taslak. Bu metni bir avukat inceliyor (soru 19); o zamana kadar kesin değildir.</p>
+<h1>Gizlilik Politikası</h1>
+<p class="updated">Güncellendi: TODO publication date</p>
+<p>Tarocchi, telefonundaki bir tarot destesidir. Desteye sorduğun sorular kişiseldir; bu yüzden bu sayfa uygulamanın ne bildiğini, bunun nerede durduğunu ve kimin görebildiğini açıkça anlatıyor.</p>
+
+<h2><span class="n">I</span>Kısaca</h2>
+<ul>
+<li>Sorunun metni, yalnızca soruyu kontrol etmek ve yorumu yazmak için Anthropic’in Claude modeline gider — adın ve geçmiş açılımların olmadan.</li>
+<li>Analitik bize ait: olayları yalnızca uygulamanın sahibi görür. Üçüncü taraf analitik ya da reklam yoktur ve hiçbir veri satılmaz.</li>
+<li>IP adresin analitik için saklanmaz — ondan yalnızca ülke alınır. Giriş sırasında adres, kötüye kullanımı önlemek için en fazla bir saat tutulur.</li>
+<li>Hesabını silmek her şeyi siler: sunucudaki verileri ve telefondaki günlüğü.</li>
+</ul>
+
+<h2><span class="n">II</span>Verilerden kim sorumlu</h2>
+<p>Tarocchi uygulamasını ve bu siteyi bağımsız geliştirici Ilya Manenkov yürütür. İletişim: <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a>.</p>
+
+<h2><span class="n">III</span>Ne toplanır ve nerede durur</h2>
+<table class="data">
+<thead><tr><th>Veri</th><th>Nerede durur</th><th>Kim alır</th></tr></thead>
+<tbody>
+<tr><td>Desteye sorulan sorular — metin</td><td data-h="Nerede">Telefon ve sunucumuz</td><td data-h="Kim">Anthropic — soru kontrol edilirken ve yorum yazılırken</td></tr>
+<tr><td>Sorunun el yazısı</td><td data-h="Nerede">Telefon ve sunucumuz</td><td data-h="Kim">Anthropic — soruyu okumak için çizgilerin görüntüsü; sunucu onu saklamaz</td></tr>
+<tr><td>Yorumlar</td><td data-h="Nerede">Telefon ve sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Çekilen kartlar ve tarihler</td><td data-h="Nerede">Telefon ve sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Dil, saat dilimi, günün kartının saati</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Bildirimler için cihaz belirteci</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">Apple (APNs bildirim hizmeti)</td></tr>
+<tr><td>Apple tanımlayıcısı — Apple ile giriş yaparsan</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Abonelik durumu</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">RevenueCat ve Apple</td></tr>
+<tr><td>Yaklaşık konum — yalnızca pencere dışındaki hava durumu açıksa</td><td data-h="Nerede">Saklanmaz</td><td data-h="Kim">Apple (WeatherKit) — hava durumu isteği anında</td></tr>
+<tr><td>Analitik olayları: ekranlar, eylemler, cihaz, ülke</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Çökme raporları — soruların ya da yorumların içeriği olmadan</td><td data-h="Nerede">Sunucumuz</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>IP adresi</td><td data-h="Nerede">Analitik için saklanmaz, yalnızca ülke kodu tutulur; giriş sırasında — en fazla bir saat</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>79. kart için fotoğraf</td><td data-h="Nerede">Saklanmaz: telefonda işlenir, sunucuya yalnızca bitmiş iki renkli baskı gider</td><td data-h="Kim">Hiç kimse</td></tr>
+<tr><td>Hareket sensörü verileri</td><td data-h="Nerede">Saklanmaz</td><td data-h="Kim">Hiç kimse</td></tr>
+</tbody>
+</table>
+
+<h3>Sorular ve yorumlar</h3>
+<p>Desteye yazdığın soru telefonunda ve sunucumuzdaki bir kopyada saklanır; böylece günlük kaybolmaz ve yeni bir telefona taşınabilir. Soruyu kontrol etmek, bir açılım önermek ve yorumu yazmak için sunucu Anthropic’in Claude modeline en azını gönderir: sorunun metni, açılım, kartlar ve dil. Parmağınla yazılmış bir soruyu model önce çiziminden okur (bkz. “El yazısı”). Ad yok, tanımlayıcı yok, geçmiş açılımlar yok. Soruları hiçbir şeyi eğitmek için kullanmayız ve asla başka insanlara göstermeyiz.</p>
+<p>Soruların ve yorumların metni asla sunucu kayıtlarına, hata mesajlarına ya da analitiğe girmez. Veritabanına yalnızca sunucu ve uygulamanın sahibi erişebilir.</p>
+
+<h3>Analitik</h3>
+<p>Uygulama sunucumuza olaylar gönderir: hangi ekranların açıldığı ve hangi eylemlerin yapıldığı (örneğin “açılım başladı”), uygulama ve iOS sürümü, telefon modeli, cihazın dili ve bölgesi, App Store mağazası ve ülke. Ülke, IP adresinden yerel bir DB-IP Lite veritabanında bulunur; adresin kendisi kaydedilmez. Soruların, yorumların, notların ve aramaların metni asla olaylara girmez.</p>
+<p>Analitik, uygulamada neyin işe yarayıp neyin yaramadığını anlamamıza yardım eder. Her zaman açıktır; ayrı bir düğmesi yoktur. Olaylar hesabına bağlıdır, ama seni uygulamalar ve web siteleri arasında izlemek için kullanılmaz ve kimseyle paylaşılmaz — Apple’ın izleme izni sorusunun çıkmamasının nedeni budur.</p>
+
+<h3>Çökmeler</h3>
+<p>Uygulama çökerse ya da bir hatayla karşılaşırsa, bir sonraki açılışta sunucumuza bir rapor gider: hatanın nerede olduğu, sürüm, cihaz. Raporda yazdığın hiçbir şey yoktur. iPhone ayarlarında izin verirsen Apple da kendi çökme raporlarını geliştiricilerle paylaşabilir.</p>
+
+<h3>El yazısı</h3>
+<p>Parmağınla yazılmış bir soruyu Claude modeli (Anthropic) okur: soruyu destenin altına koyduğunda telefon sunucumuza çizgilerin bir çizimini gönderir — rengi ve arka planı olmayan sade bir görüntü — ve sunucu onu soru kontrolüyle birlikte modele iletir. Geri gelen, okunduğu hâliyle satırdır ve onu düzeltebilirsin. Sunucu çizimi saklamaz, kayıtlara ya da analitiğe yazmaz. Çizgilerin kendisi soruyla birlikte kalır; böylece zarf ve günlük senin kendi el yazını korur.</p>
+
+<h3>Apple ile giriş</h3>
+<p>Hesabın anonim olarak başlar. Apple ile giriş yaparsan sunucu Apple’ın verdiği tanımlayıcıyı saklar — günlüğün seni yeni bir telefonda böyle bulur. Sunucu Apple’dan gelen adını ya da e-postanı saklamaz.</p>
+
+<h3>Abonelik</h3>
+<p>Satın alımlar App Store üzerinden yapılır. Sunucu abonelik durumunu, satın alımları doğrulayan bir hizmet olan RevenueCat’ten öğrenir. Uygulama ödeme bilgilerini asla görmez.</p>
+
+<h2><span class="n">IV</span>Verileri kimler alır</h2>
+<ul>
+<li><b>Anthropic</b> — Claude modelinin soruyu kontrol edip yorumu yazabilmesi için sorunun metni (ya da okunabilmesi için el yazısının çizimi), açılım, kartlar ve dil. Bir tüketici ürününü değil, API’yi kullanıyoruz. <span class="todo">TODO: Anthropic’in sözleşmemiz kapsamında API isteklerini saklaması — yayından önce doldurulacak.</span></li>
+<li><b>Apple</b> — bildirimler (APNs), hava durumu (WeatherKit), Apple ile giriş, satın alımlar.</li>
+<li><b>RevenueCat</b> — abonelik durumu ve Tarocchi hesap tanımlayıcın.</li>
+</ul>
+<p>Veri satmayız ve reklam ağlarına vermeyiz. Uygulamada reklam yoktur.</p>
+
+<h2><span class="n">V</span>Nerede ve nasıl saklanır</h2>
+<p>Veriler <span class="todo">TODO: barındırma ülkesi (soru 14)</span> konumundaki sunucumuzda tutulur. Diskler ve yedekler şifrelenir, bağlantılar TLS kullanır ve veritabanına internetten erişilemez <span class="todo">(TODO: barındırma seçilince doğrulanacak)</span>. Günlüğün kopyası sana ait kişisel bir anahtarla şifrelenmez: veritabanına erişim kazanan biri soruları okuyabilir. Bu yüzden veritabanına ve yedeklere erişim, sunucu ve sahibi dışında herkese kapalıdır.</p>
+
+<h2><span class="n">VI</span>Ne kadar saklanır</h2>
+<ul>
+<li>Günlük, sorular ve yorumlar — sen onları ya da hesabını silene kadar.</li>
+<li>Yakılan bir soru, el yazısı dahil, telefondan ve sunucudan hemen ve kalıcı olarak silinir. Veritabanı yedeklerinden, yedekler yenilendikçe — 30 gün içinde — kaybolur.</li>
+<li>Ham analitik olayları — 25 ay, ardından silinir. Toplu sayılar (örneğin bir günde kaç açılım yapıldığı) süresiz tutulur ve kimseye bağlı değildir.</li>
+<li>79. kartının baskısı — hesap silinene kadar sunucuda.</li>
+<li>Çökme raporları ve bildirim belirteci — çökme raporları 90 gün; bildirim belirteci 60 gün etkinlik olmazsa silinir.</li>
+<li>Giriş sırasındaki IP adresi — kötüye kullanımı önlemek için en fazla bir saat.</li>
+</ul>
+
+<h2><span class="n">VII</span>Uygulamada neler yapabilirsin</h2>
+<ul>
+<li><b>Bir soruyu yakmak</b> — günlükte. Metin ve el yazısı yanar; tarih ve kartlar kalır.</li>
+<li><b>Günlüğü silmek</b> — Ayarlar’da.</li>
+<li><b>Hesabını silmek</b> — Ayarlar → Hesap → Hesabı sil. Her şey silinir: sunucudaki veriler, Apple ID’ne ve RevenueCat’teki satın alımlara olan bağ, bu telefondaki günlük ve ayarlar. Analitik olaylarının seninle bağı kopar. Bu geri alınamaz. Silmeden çıkış yapmak yoktur: hesap ve günlük birlikte yaşar.</li>
+<li>Hesabı silmek aboneliği iptal etmez — bu, Apple ID ayarlarında yapılır.</li>
+<li>Hakkında hangi verileri tuttuğumuzu sormak ya da silmemizi istemek için <a href="mailto:flyyyxxxy@gmail.com">flyyyxxxy@gmail.com</a> adresine yaz.</li>
+</ul>
+
+<h2><span class="n">VIII</span>Çocuklar</h2>
+<p><span class="todo">TODO: yaş sınırı ve çocuklarla ilgili kural — soru 19 çözüldükten sonra.</span></p>
+
+<h2><span class="n">IX</span>Değişiklikler</h2>
+<p>Bu politika değişirse yeni sürüm bu sayfada yeni bir tarihle yer alır.</p>
+
+<p class="note">IP’ye göre ülke, <a href="https://db-ip.com">DB-IP</a> tarafından sağlanan IP to Country Lite ile belirlenir; lisansı CC BY 4.0’dır.</p>
+</main>
+<footer class="foot"><p>Tarocchi eğlence ve iç gözlem içindir. Kartlar geleceği söylemez.</p></footer>
+</body>
+</html>
